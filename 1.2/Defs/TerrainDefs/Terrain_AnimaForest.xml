@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<TerrainDef ParentName="NaturalTerrainBase">
+		<defName>RG_AnimaSoil</defName>
+		<label>anima soil</label>
+		<texturePath>Terrain/Surfaces/RG_AnimaSoil</texturePath>
+		<edgeType>FadeRough</edgeType>
+		<renderPrecedence>340</renderPrecedence>
+		<pathCost>2</pathCost>
+		<statBases>
+			<Beauty>-1</Beauty>
+			<Cleanliness>-1</Cleanliness>
+		</statBases>
+		<scatterType>Rocky</scatterType>
+		<affordances>
+			<li>Light</li>
+			<li>Medium</li>
+			<li>Heavy</li>
+			<li>GrowSoil</li>
+			<li>Diggable</li>
+		</affordances>
+		<generatedFilth>Filth_Dirt</generatedFilth>
+		<fertility>1</fertility>
+		<takeFootprints>True</takeFootprints>
+		<tools>
+			<li>
+				<label>dirt</label>
+				<capacities>
+					<li>KickMaterialInEyes</li>
+				</capacities>
+				<hediff>DirtInEyes</hediff>
+				<cooldownTime>1.5</cooldownTime>
+			</li>
+		</tools>
+	</TerrainDef>
+
+	<TerrainDef ParentName="NaturalTerrainBase">
+		<defName>RG_EnchantedAnimaSoil</defName>
+		<label>enchanted anima soil</label>
+		<texturePath>Terrain/Surfaces/RG_AnimaEnchantedSoil</texturePath>
+		<edgeType>FadeRough</edgeType>
+		<renderPrecedence>330</renderPrecedence>
+		<pathCost>1</pathCost>
+		<statBases>
+			<Beauty>-2</Beauty>
+			<Cleanliness>-2</Cleanliness>
+		</statBases>
+		<affordances>
+			<li>Light</li>
+
+		</affordances>
+		<generatedFilth>Filth_Dirt</generatedFilth>
+		<fertility>0</fertility>
+		<takeFootprints>True</takeFootprints>
+
+		<avoidWander>true</avoidWander>
+		<driesTo>RG_AnimaSoil</driesTo>
+
+	</TerrainDef>
+
+
+	<TerrainDef ParentName="NaturalTerrainBase">
+		<defName>RG_CrackedAnimaSoil</defName>
+		<label>anima cracked soil</label>
+		<texturePath>Terrain/Surfaces/RG_AnimaCrackedSoil</texturePath>
+		<edgeType>FadeRough</edgeType>
+		<renderPrecedence>320</renderPrecedence>
+		<pathCost>1</pathCost>
+		<statBases>
+			<Beauty>-2</Beauty>
+			<Cleanliness>-2</Cleanliness>
+		</statBases>
+		<affordances>
+			<li>Light</li>
+
+		</affordances>
+		<generatedFilth>Filth_Dirt</generatedFilth>
+		<fertility>0</fertility>
+		<takeFootprints>True</takeFootprints>
+
+		<avoidWander>true</avoidWander>
+		<driesTo>RG_AnimaSoil</driesTo>
+
+	</TerrainDef>
+
+	<TerrainDef ParentName="WaterDeepBase">
+		<defName>GR_AnimaWaterDeep</defName>
+		<label>deep anima water</label>
+		<texturePath>Terrain/Surfaces/RG_AnimaWaterDeepRamp</texturePath>
+		<renderPrecedence>395</renderPrecedence>
+	</TerrainDef>
+
+	<TerrainDef ParentName="WaterChestDeepBase">
+		<defName>GR_AnimaWaterMovingChestDeep</defName>
+		<label>chest-deep anima moving water</label>
+		<renderPrecedence>399</renderPrecedence>
+		<texturePath>Terrain/Surfaces/RG_AnimaWaterChestDeepRamp</texturePath>
+		<affordances>
+			<li>MovingFluid</li>
+		</affordances>
+		<tags>
+			<li>River</li>
+		</tags>
+		<waterDepthShaderParameters>
+			<_UseWaterOffset>1</_UseWaterOffset>
+		</waterDepthShaderParameters>
+	</TerrainDef>
+
+	<TerrainDef ParentName="WaterShallowBase">
+		<defName>GR_AnimaWaterShallow</defName>
+		<label>shallow anima water</label>
+		<texturePath>Terrain/Surfaces/RG_AnimaWaterShallowRamp</texturePath>
+		<waterDepthShader>Map/WaterDepth</waterDepthShader>
+		<renderPrecedence>394</renderPrecedence>
+		<driesTo>RG_CrackedAnimaSoil</driesTo>
+	</TerrainDef>
+</Defs>
