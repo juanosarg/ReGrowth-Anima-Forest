@@ -299,6 +299,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BiomeWorkers\BiomeWorker_AnimaForest.cs" />
+    <Compile Include="Harmony\GenStep_Terrain_TerrainFrom.cs" />
+    <Compile Include="Harmony\HarmonyInstance.cs" />
+    <Compile Include="Harmony\World_NaturalRockTypesIn.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="WorldComponents\WorldComponentExtender.cs" />
   </ItemGroup>

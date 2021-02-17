@@ -7,12 +7,13 @@
 		<description>A legendary biome featured in folk tales of tribal groups for centuries. Highly revered, this forest allows ancient tribes to gain immense psychic powers, but it requires respect and absence of any technology. Players can choose to settle in Anima Forest, angering other tribes and possibly excavating rare resources at the cost of the wrath of the forest.</description>
 		<workerClass>AnimaForest.BiomeWorker_AnimaForest</workerClass>
 		<animalDensity>1.5</animalDensity>
-		<plantDensity>0.5</plantDensity>
+		<plantDensity>1</plantDensity>
 		<settlementSelectionWeight>0.25</settlementSelectionWeight>
 		<texture>Terrain/Surfaces/RG_AnimaSoil</texture>
 		<forageability>0.5</forageability>
 		<foragedFood>RawBerries</foragedFood>
-
+		<allowRoads>false</allowRoads>
+		<allowRivers>false</allowRivers>
 		<movementDifficulty>1.5</movementDifficulty>
 		<wildPlantRegrowDays>15</wildPlantRegrowDays>
 		<soundsAmbient>
@@ -77,7 +78,7 @@
 		</terrainsByFertility>
 		<terrainPatchMakers>
 			<li>
-				<perlinFrequency>0.02</perlinFrequency>
+				<perlinFrequency>0.05</perlinFrequency>
 				<thresholds>
 					<li>
 						<terrain>RG_CrackedAnimaSoil</terrain>
@@ -87,11 +88,11 @@
 				</thresholds>
 			</li>
 			<li>
-        <perlinFrequency>0.015</perlinFrequency>
+        <perlinFrequency>0.045</perlinFrequency>
         <thresholds>
           <li>
             <terrain>RG_AnimaSoil</terrain>
-            <min>0.73</min>
+            <min>0.53</min>
             <max>0.80</max>
           </li>
           <li>
@@ -113,7 +114,10 @@
       </li>
 		</terrainPatchMakers>
 		<wildPlants>
-			
+			<Plant_GrassAnima>5</Plant_GrassAnima>
+			<RG_AnimaSapling>3</RG_AnimaSapling>
+			<RG_AnimaBush>3</RG_AnimaBush>
+			<Plant_TreeAnima>0.1</Plant_TreeAnima>
 
 
 		</wildPlants>

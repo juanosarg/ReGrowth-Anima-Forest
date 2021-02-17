@@ -51,7 +51,7 @@
 
 		</affordances>
 		<generatedFilth>Filth_Dirt</generatedFilth>
-		<fertility>0</fertility>
+		<fertility>0.69</fertility>
 		<takeFootprints>True</takeFootprints>
 
 		<avoidWander>true</avoidWander>
