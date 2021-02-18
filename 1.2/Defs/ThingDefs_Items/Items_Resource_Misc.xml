@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+	<ThingDef ParentName="ResourceBase">
+		<defName>RG_AnimaPearls</defName>
+		<label>anima pearls</label>
+		<description>.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/RG_AnimaPearls</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<tradeability>None</tradeability>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<stackLimit>75</stackLimit>
+		<useHitPoints>true</useHitPoints>
+		<statBases>
+			<MarketValue>1</MarketValue>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Mass>0.05</Mass>
+
+		</statBases>
+		<thingCategories>
+			<li>ResourcesRaw</li>
+		</thingCategories>
+		<tradeTags>
+			<li>Exotic</li>
+		</tradeTags>
+	</ThingDef>
+
+	
+
+
+
+</Defs>

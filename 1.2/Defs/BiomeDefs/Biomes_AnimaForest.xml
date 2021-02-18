@@ -7,7 +7,7 @@
 		<description>A legendary biome featured in folk tales of tribal groups for centuries. Highly revered, this forest allows ancient tribes to gain immense psychic powers, but it requires respect and absence of any technology. Players can choose to settle in Anima Forest, angering other tribes and possibly excavating rare resources at the cost of the wrath of the forest.</description>
 		<workerClass>AnimaForest.BiomeWorker_AnimaForest</workerClass>
 		<animalDensity>1.5</animalDensity>
-		<plantDensity>1</plantDensity>
+		<plantDensity>1.5</plantDensity>
 		<settlementSelectionWeight>0.25</settlementSelectionWeight>
 		<texture>Terrain/Surfaces/RG_AnimaSoil</texture>
 		<forageability>0.5</forageability>
@@ -115,14 +115,20 @@
 		</terrainPatchMakers>
 		<wildPlants>
 			<Plant_GrassAnima>5</Plant_GrassAnima>
-			<RG_AnimaSapling>3</RG_AnimaSapling>
+			<RG_AnimaSapling>5</RG_AnimaSapling>
+			<RG_AnimaHeartBlossom>1</RG_AnimaHeartBlossom>
+			<RG_AnimaBell>1</RG_AnimaBell>
+			<RG_SentientBrambles>2</RG_SentientBrambles>
 			<RG_AnimaBush>3</RG_AnimaBush>
+			<RG_MysticCap>0.5</RG_MysticCap>
 			<Plant_TreeAnima>0.1</Plant_TreeAnima>
+			<RG_AncientAnimaTree>0.025</RG_AncientAnimaTree>
 
 
 		</wildPlants>
 		<wildAnimals>
-			
+			<RG_AnimaBear>0.07</RG_AnimaBear>
+			<RG_AnimaDeer>0.5</RG_AnimaDeer>
 		</wildAnimals>
 		<allowedPackAnimals>
 			<li>Muffalo</li>
