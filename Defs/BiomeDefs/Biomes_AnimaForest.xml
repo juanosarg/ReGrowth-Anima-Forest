@@ -120,8 +120,7 @@
 			<RG-AF_AncientAnimaTree>0.025</RG-AF_AncientAnimaTree>
 		</wildPlants>
 		<wildAnimals>
-			<RG-AF_AnimaBear>0.07</RG-AF_AnimaBear>
-			<RG-AF_AnimaDeer>0.5</RG-AF_AnimaDeer>
+			<Hare>1</Hare>
 		</wildAnimals>
 		<allowedPackAnimals>
 			<li>Muffalo</li>
