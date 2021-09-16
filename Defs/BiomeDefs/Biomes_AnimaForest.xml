@@ -46,23 +46,7 @@
 				<diseaseInc>Disease_SensoryMechanites</diseaseInc>
 				<commonality>30</commonality>
 			</li>
-
-			<li>
-				<diseaseInc>Disease_AnimalFlu</diseaseInc>
-				<commonality>100</commonality>
-			</li>
-			<li>
-				<diseaseInc>Disease_AnimalPlague</diseaseInc>
-				<commonality>100</commonality>
-			</li>
 		</diseases>
-		<baseWeatherCommonalities>
-			<Clear>18</Clear>
-			<Rain>10</Rain>
-			<DryThunderstorm>1</DryThunderstorm>
-			<RainyThunderstorm>10</RainyThunderstorm>
-			<FoggyRain>10</FoggyRain>
-		</baseWeatherCommonalities>
 		<terrainsByFertility>
 			<li>
 				<terrain>Soil</terrain>
@@ -70,7 +54,7 @@
 				<max>0.50</max>
 			</li>
 			<li>
-				<terrain>RG_AspenSoil</terrain>
+				<terrain>RG_AnimaSoil</terrain>
 				<min>0.50</min>
 				<max>0.97</max>
 			</li>
@@ -81,6 +65,16 @@
 			</li>
 		</terrainsByFertility>
 		<terrainPatchMakers>
+			<li>
+				<perlinFrequency>0.05</perlinFrequency>
+				<thresholds>
+					<li>
+						<terrain>RG_EnchantedAnimaSoil</terrain>
+						<min>0.6</min>
+						<max>999</max>
+					</li>
+				</thresholds>
+			</li>
 			<li>
 				<perlinFrequency>0.015</perlinFrequency>
 				<thresholds>
@@ -107,55 +101,13 @@
 				</thresholds>
 			</li>
 		</terrainPatchMakers>
-		<terrainsByFertility>
-			<li>
-				<terrain>RG-AF_EnchantedAnimaSoil</terrain>
-				<min>-999</min>
-				<max>0.87</max>
-			</li>
-			<li>
-				<terrain>RG-AF_AnimaSoil</terrain>
-				<min>0.87</min>
-				<max>999</max>
-			</li>
-		</terrainsByFertility>
-		<terrainPatchMakers>
-			<li>
-				<perlinFrequency>0.05</perlinFrequency>
-				<thresholds>
-					<li>
-						<terrain>RG-AF_CrackedAnimaSoil</terrain>
-						<min>0.6</min>
-						<max>999</max>
-					</li>
-				</thresholds>
-			</li>
-			<li>
-				<perlinFrequency>0.045</perlinFrequency>
-				<thresholds>
-					<li>
-						<terrain>RG-AF_AnimaSoil</terrain>
-						<min>0.53</min>
-						<max>0.80</max>
-					</li>
-					<li>
-						<terrain>RG-AF_CrackedAnimaSoil</terrain>
-						<min>0.80</min>
-						<max>0.93</max>
-					</li>
-					<li>
-						<terrain>GR_AnimaWaterShallow</terrain>
-						<min>0.93</min>
-						<max>1.06</max>
-					</li>
-					<li>
-						<terrain>GR_AnimaWaterDeep</terrain>
-						<min>1.06</min>
-						<max>999</max>
-					</li>
-				</thresholds>
-			</li>
-		</terrainPatchMakers>
+		<baseWeatherCommonalities>
+			<Clear>18</Clear>
+			<Rain>10</Rain>
+			<DryThunderstorm>1</DryThunderstorm>
+			<RainyThunderstorm>10</RainyThunderstorm>
+			<FoggyRain>10</FoggyRain>
+		</baseWeatherCommonalities>
 		<wildPlants>
 			<Plant_GrassAnima>5</Plant_GrassAnima>
 			<RG-AF_AnimaSapling>5</RG-AF_AnimaSapling>
