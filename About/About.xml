@@ -1,27 +1,19 @@
 <ModMetaData>
-	<name>[HLX] ReGrowth - Anima Forest</name>
-	<author>Helixien, Sarg, Oskar Potocki, Taranchuk</author>
-		<supportedVersions>
-     
-	   <li>1.2</li>
-   </supportedVersions>
+
+	<name>ReGrowth: Anima Forest</name>
+	<author>Helixien, Sarg, Taranchuk, Oskar Potocki</author>
+	<packageId>ReGrowth.BOTR.AnimaForest</packageId>
+	<supportedVersions>
+		<li>1.3</li>
+	</supportedVersions>
 	<modDependencies>
 		<li>
-            <packageId>ReGrowth.BOTR.Core</packageId>
-            <displayName>ReGrowth - Core</displayName>
-            <downloadUrl>https://github.com/Helixien/ReGrowth-Core</downloadUrl>
-            <steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2260097569</steamWorkshopUrl>
-        </li>
+			<packageId>ReGrowth.BOTR.Core</packageId>
+			<displayName>ReGrowth - Core</displayName>
+			<downloadUrl>https://github.com/Helixien/ReGrowth-Core</downloadUrl>
+			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2260097569</steamWorkshopUrl>
+		</li>
 	</modDependencies>
-	
-	
-		<packageId>ReGrowth.BOTR.AnimaForest</packageId>
-	<description>Adds the Anima Forest biome
+	<description/>
 
-&lt;size=24&gt;Changelog&lt;/size&gt;
-
-v0.1: Prerelease
-
-
-		</description>
 </ModMetaData>

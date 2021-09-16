@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="AnimalThingBase">
+		<defName>RG_AnimaBear</defName>
+		<label>anima bear</label>
+		<description>.</description>
+		<statBases>
+			<MoveSpeed>5</MoveSpeed>
+			<ComfyTemperatureMin>-40</ComfyTemperatureMin>
+			<MarketValue>800</MarketValue>
+		</statBases>
+		<uiIconScale>1.15</uiIconScale>
+		<tools>
+			<li>
+				<label>left claw</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>19</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>14</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>right claw</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>19</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>14</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>26</power>
+				<cooldownTime>2.6</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<chanceFactor>0.5</chanceFactor>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>14</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>11</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+		<race>
+			<wildness>0.9</wildness>
+			<useMeatFrom>Bear_Grizzly</useMeatFrom>
+			<herdAnimal>false</herdAnimal>
+			<predator>true</predator>
+			<maxPreyBodySize>3</maxPreyBodySize>
+			<body>QuadrupedAnimalWithPaws</body>
+			<baseHungerRate>0.25</baseHungerRate>
+			<baseBodySize>2.3</baseBodySize>
+			<baseHealthScale>3</baseHealthScale>
+			<foodType>OmnivoreAnimal, OvivoreAnimal</foodType>
+			<leatherDef>Leather_Bear</leatherDef>
+			<gestationPeriodDays>30</gestationPeriodDays>		
+			<lifeExpectancy>25</lifeExpectancy>
+			<trainability>Advanced</trainability>
+			<manhunterOnTameFailChance>0.10</manhunterOnTameFailChance>
+			<manhunterOnDamageChance>0.10</manhunterOnDamageChance>
+			<lifeStageAges>
+				<li>
+					<def>AnimalBaby</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>AnimalJuvenile</def>
+					<minAge>0.4</minAge>
+				</li>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0.8</minAge>
+					<soundWounded>Pawn_Bear_Injured</soundWounded>
+					<soundDeath>Pawn_Bear_Death</soundDeath>
+					<soundCall>Pawn_Bear_Call</soundCall>
+					<soundAngry>Pawn_Bear_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+		</race>
+		<tradeTags>
+			<li>AnimalUncommon</li>
+			<li>AnimalFighter</li>
+		</tradeTags>
+	</ThingDef>
+
+	<PawnKindDef ParentName="AnimalKindBase" >
+		<combatPower>200</combatPower>
+		<ecoSystemWeight>0.5</ecoSystemWeight>
+		<defName>RG_AnimaBear</defName>
+		<label>anima bear</label>
+		<race>RG_AnimaBear</race>
+		<canArriveManhunter>false</canArriveManhunter>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/RG_AnimaBear/RG_AnimaBear</texPath>
+					<drawSize>1.4</drawSize>
+
+					<shadowData>
+						<volume>(0.4, 0.3, 0.3)</volume>
+						<offset>(0,0,-0.2)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/RG_AnimaBear/RG_AnimaBear_Dessicated</texPath>
+					<drawSize>1.4</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/RG_AnimaBear/RG_AnimaBear</texPath>
+					<drawSize>2</drawSize>
+
+					<shadowData>
+						<volume>(0.6, 0.45, 0.45)</volume>
+						<offset>(0,0,-0.25)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/RG_AnimaBear/RG_AnimaBear_Dessicated</texPath>
+					<drawSize>2</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/RG_AnimaBear/RG_AnimaBear</texPath>
+					<drawSize>2.7</drawSize>
+
+					<shadowData>
+						<volume>(0.8, 0.6, 0.6)</volume>
+						<offset>(0,0,-0.3)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/RG_AnimaBear/RG_AnimaBear_Dessicated</texPath>
+					<drawSize>2.7</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+
+
+
+
+</Defs>

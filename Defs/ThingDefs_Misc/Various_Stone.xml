@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- ================ Jadeite ================ -->
+
+  <ThingDef ParentName="UglyRockBase" Name="RG_JadeiteBase">
+    <defName>RG_Jadeite</defName>
+    <label>jadeite</label>
+    <description>A silicate mineral in the pyroxene family that is one of the two forms of jade.</description>
+    <graphicData>
+       <texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <color>(68,83,68)</color>
+      <colorTwo>(30,173,25)</colorTwo>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>1500</MaxHitPoints>
+      
+    </statBases>
+    <building>
+      <mineableThing>Jade</mineableThing>
+      <mineableDropChance>1</mineableDropChance>
+	  <mineableYield>10</mineableYield>
+      <smoothedThing>RG_SmoothedJadeite</smoothedThing>
+    </building>
+  </ThingDef>
+
+  <ThingDef ParentName="RG_JadeiteBase">
+    <defName>RG_SmoothedJadeite</defName>
+    <label>smoothed jadeite</label>
+    <description>A silicate mineral in the pyroxene family that is one of the two forms of jade.</description>
+    <graphicData Inherit="False">
+      <texPath>Things/Building/Linked/RockSmooth_Atlas</texPath>
+	  <color>(68,83,68)</color>
+	  <graphicClass>Graphic_Single</graphicClass>
+      <linkType>CornerFiller</linkType>
+      <linkFlags>
+        <li>Rock</li>
+        <li>MapEdge</li>
+      </linkFlags>
+    </graphicData>
+    <statBases>
+      <Beauty>2</Beauty>
+      <MarketValue>25</MarketValue>
+    </statBases>
+    <building>
+      <isNaturalRock>false</isNaturalRock>
+      <canBuildNonEdificesUnder>true</canBuildNonEdificesUnder>
+      <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+      <smoothedThing />
+    </building>
+    <saveCompressible>false</saveCompressible>
+    <repairEffect>Repair</repairEffect>
+  </ThingDef>
+  
+  
+ 
+</Defs>

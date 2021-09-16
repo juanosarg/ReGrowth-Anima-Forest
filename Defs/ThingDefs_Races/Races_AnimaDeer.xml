@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="AnimalThingBase">
+    <defName>RG_AnimaDeer</defName>
+    <label>anima deer</label>
+    <description>.</description>
+    <statBases>
+      <MoveSpeed>5.9</MoveSpeed>
+      <MarketValue>350</MarketValue>
+      <ComfyTemperatureMin>-30</ComfyTemperatureMin>
+    </statBases>
+    <tools>
+      <li>
+        <label>left hoof</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <label>right hoof</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <label>teeth</label>
+        <capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+        <chanceFactor>0.5</chanceFactor>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>6</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+    <race>
+      <body>QuadrupedAnimalWithHooves</body>
+      <herdAnimal>true</herdAnimal>
+      <baseBodySize>0.9</baseBodySize>
+      <baseHealthScale>0.9</baseHealthScale>
+      <baseHungerRate>0.30</baseHungerRate>
+      <foodType>VegetarianRoughAnimal</foodType>
+      <leatherDef>Leather_Plain</leatherDef>	  
+      <useMeatFrom>Deer</useMeatFrom>
+      <wildness>0.85</wildness>
+      <nuzzleMtbHours>60</nuzzleMtbHours>
+      <gestationPeriodDays>24</gestationPeriodDays>
+      <lifeExpectancy>18</lifeExpectancy>
+      <manhunterOnDamageChance>0</manhunterOnDamageChance>
+      <manhunterOnTameFailChance>0</manhunterOnTameFailChance>
+      <lifeStageAges>
+        <li>
+          <def>AnimalBaby</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>AnimalJuvenile</def>
+          <minAge>0.2</minAge>
+        </li>
+        <li>
+          <def>AnimalAdult</def>
+          <minAge>0.5</minAge>
+          <soundWounded>Pawn_Deer_Wounded</soundWounded>
+          <soundDeath>Pawn_Deer_Death</soundDeath>
+          <soundCall>Pawn_Deer_Call</soundCall>
+          <soundAngry>Pawn_Deer_Angry</soundAngry>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+    </race>
+    <tradeTags>
+      <li>AnimalCommon</li>
+    </tradeTags>
+  </ThingDef>
+  
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>RG_AnimaDeer</defName>
+    <label>anima deer</label>
+    <labelPlural>anima deer</labelPlural>
+    <race>RG_AnimaDeer</race>
+    <combatPower>60</combatPower>
+	<canArriveManhunter>false</canArriveManhunter>
+    <ecoSystemWeight>0.50</ecoSystemWeight>
+    <wildGroupSize>3~9</wildGroupSize>
+    <labelMale>anima buck</labelMale>
+    <labelFemale>anima doe</labelFemale>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/RG_AnimaDeer/RG_AnimaDeerFemale</texPath>
+          <drawSize>2.2</drawSize>         
+         
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/RG_AnimaDeer/RG_AnimaDeerFemale_Dessicated</texPath>
+          <drawSize>2.2</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/RG_AnimaDeer/RG_AnimaDeerFemale</texPath>
+          <drawSize>2.5</drawSize>
+         
+          <shadowData>
+            <volume>(0.3, 0.3, 0.3)</volume>
+            <offset>(0,0,-0.3)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/RG_AnimaDeer/RG_AnimaDeerFemale_Dessicated</texPath>
+          <drawSize>2.5</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/RG_AnimaDeer/RG_AnimaDeerMale</texPath>
+          <drawSize>3</drawSize>
+         
+          <shadowData>
+            <volume>(0.4, 0.4, 0.4)</volume>
+            <offset>(0,0,-0.2)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <femaleGraphicData>
+          <texPath>Things/Pawn/Animal/RG_AnimaDeer/RG_AnimaDeerFemale</texPath>
+          <drawSize>3</drawSize>
+        
+          <shadowData>
+            <volume>(0.4, 0.4, 0.4)</volume>
+            <offset>(0,0,-0.2)</offset>
+          </shadowData>
+        </femaleGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/RG_AnimaDeer/RG_AnimaDeerMale_Dessicated</texPath>
+          <drawSize>3</drawSize>
+        </dessicatedBodyGraphicData>
+        <femaleDessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/RG_AnimaDeer/RG_AnimaDeerFemale_Dessicated</texPath>
+          <drawSize>3</drawSize>
+        </femaleDessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+ 
+  
+  
+</Defs>
