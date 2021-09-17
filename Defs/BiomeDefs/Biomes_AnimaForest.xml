@@ -54,7 +54,7 @@
 				<max>0.50</max>
 			</li>
 			<li>
-				<terrain>RG_AnimaSoil</terrain>
+				<terrain>RG_AnimaSentientSoil</terrain>
 				<min>0.50</min>
 				<max>0.97</max>
 			</li>
@@ -66,37 +66,70 @@
 		</terrainsByFertility>
 		<terrainPatchMakers>
 			<li>
-				<perlinFrequency>0.05</perlinFrequency>
+				<perlinFrequency>0.03</perlinFrequency>
+				<minSize>20</minSize>
 				<thresholds>
 					<li>
+						<terrain>RG_AnimaSentientSoil</terrain>
+						<min>-0.10</min>
+						<max>0.16</max>
+					</li>
+					<li>
+						<terrain>RG_CrackedAnimaSoil</terrain>
+						<min>0.16</min>
+						<max>0.36</max>
+					</li>
+					<li>
 						<terrain>RG_EnchantedAnimaSoil</terrain>
-						<min>0.6</min>
+						<min>0.36</min>
+						<max>0.50</max>
+					</li>
+					<li>
+						<terrain>RG_CrackedAnimaSoil</terrain>
+						<min>0.50</min>
+						<max>0.76</max>
+					</li>
+					<li>
+						<terrain>RG_AnimaSentientSoil</terrain>
+						<min>0.76</min>
 						<max>999</max>
 					</li>
 				</thresholds>
 			</li>
 			<li>
 				<perlinFrequency>0.015</perlinFrequency>
+				<perlinLacunarity>1.8</perlinLacunarity>
+				<minSize>20</minSize>
 				<thresholds>
 					<li>
-						<terrain>SoilRich</terrain>
-						<min>0.73</min>
-						<max>0.80</max>
+						<terrain>RG_HotSpringSand</terrain>
+						<min>-999</min>
+						<max>-1</max>
 					</li>
 					<li>
-						<terrain>Mud</terrain>
-						<min>0.80</min>
-						<max>0.93</max>
+						<terrain>RG_AnimaSpring</terrain>
+						<min>-1.0</min>
+						<max>-0.95</max>
 					</li>
 					<li>
-						<terrain>WaterShallow</terrain>
-						<min>0.93</min>
-						<max>1.06</max>
+						<terrain>RG_AnimaSpringDeep</terrain>
+						<min>-0.95</min>
+						<max>-0.70</max>
 					</li>
 					<li>
-						<terrain>WaterDeep</terrain>
-						<min>1.06</min>
-						<max>999</max>
+						<terrain>RG_AnimaSpring</terrain>
+						<min>-0.70</min>
+						<max>-0.55</max>
+					</li>
+					<li>
+						<terrain>RG_HotSpringSand</terrain>
+						<min>-0.55</min>
+						<max>-0.45</max>
+					</li>
+					<li>
+						<terrain>RG_AnimaSentientSoil</terrain>
+						<min>-0.45</min>
+						<max>-0.38</max>
 					</li>
 				</thresholds>
 			</li>
@@ -107,17 +140,19 @@
 			<DryThunderstorm>1</DryThunderstorm>
 			<RainyThunderstorm>10</RainyThunderstorm>
 			<FoggyRain>10</FoggyRain>
+			<RG_FoggySnow>2</RG_FoggySnow>
+			<RG_Drizzle>2</RG_Drizzle>
+			<RG_Overcast>6</RG_Overcast>
+			<RG_Windy>8</RG_Windy>
+			<RG_Monsoon>0.5</RG_Monsoon>
+			<RG_Hail>1</RG_Hail>
 		</baseWeatherCommonalities>
 		<wildPlants>
-			<Plant_GrassAnima>5</Plant_GrassAnima>
-			<RG-AF_AnimaSapling>5</RG-AF_AnimaSapling>
-			<RG-AF_AnimaHeartBlossom>1</RG-AF_AnimaHeartBlossom>
-			<RG-AF_AnimaBell>1</RG-AF_AnimaBell>
-			<RG-AF_SentientBrambles>2</RG-AF_SentientBrambles>
-			<RG-AF_AnimaBush>3</RG-AF_AnimaBush>
-			<RG-AF_MysticCap>0.5</RG-AF_MysticCap>
-			<Plant_TreeAnima>0.1</Plant_TreeAnima>
-			<RG-AF_AncientAnimaTree>0.025</RG-AF_AncientAnimaTree>
+			<Plant_Grass>3</Plant_Grass>
+			<Plant_GrassAnima>8</Plant_GrassAnima>
+			<RG-AF_Plant_TallGrassAnima>4</RG-AF_Plant_TallGrassAnima>
+			<RG-AF_Plant_SentientBrambles>3</RG-AF_Plant_SentientBrambles>
+			<RG-AF_Plant_AnimaBush>3</RG-AF_Plant_AnimaBush>
 		</wildPlants>
 		<wildAnimals>
 			<Hare>1</Hare>

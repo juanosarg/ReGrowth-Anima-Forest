@@ -1,0 +1,329 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="PlantBaseNonEdible">
+		<defName>RG-AF_Plant_TallGrassAnima</defName>
+		<label>anima grass</label>
+		<description>A grass infused with luminous microorganisms. Tribal peoples find that anima grass grows around the base of an anima tree as they meditate. It seems to reflect some kind of strengthening of the tree's psychic power.\n\nOffworld scientists have tried to study the phenomenon, but the grass degenerates into normal plant matter when observed too closely.\n\nAnimals refuse eat anima grass. Tribal stories say this is done out of respect and fear.</description>
+		<statBases>
+			<MaxHitPoints>85</MaxHitPoints>
+			<Flammability>1.3</Flammability>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Grass_Anima</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<hideAtSnowDepth>0.5</hideAtSnowDepth>
+		<plant>
+			<fertilityMin>0.02</fertilityMin>
+			<fertilitySensitivity>0</fertilitySensitivity>
+			<sowMinSkill>0</sowMinSkill>
+			<growDays>1</growDays>
+			<lifespanDaysPerGrowDays>60</lifespanDaysPerGrowDays>
+			<harvestWork>40</harvestWork>
+			<maxMeshCount>9</maxMeshCount>
+			<visualSizeRange>0.6~0.85</visualSizeRange>
+			<topWindExposure>0.4</topWindExposure>
+			<wildOrder>1</wildOrder>
+			<dieFromToxicFallout>False</dieFromToxicFallout>
+			<allowAutoCut>false</allowAutoCut>
+		</plant>
+	</ThingDef>
+	<!--============================ Bushes =============================-->
+	<ThingDef ParentName="BushBase">
+		<defName>RG-AF_Plant_AnimaBush</defName>
+		<label>anima bush</label>
+		<description>.</description>
+		<pathCost>50</pathCost>
+		<graphicData>
+			<texPath>Things/Plant/RG_AnimaBush</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shadowData>
+				<volume>(0.55, 0.17, 0.15)</volume>
+				<offset>(0,0,-0.2)</offset>
+			</shadowData>
+		</graphicData>
+		<plant>
+			<fertilityMin>0</fertilityMin>
+			<fertilitySensitivity>0</fertilitySensitivity>
+			<wildClusterRadius>4</wildClusterRadius>
+			<wildClusterWeight>7.5</wildClusterWeight>
+			<visualSizeRange>0.75~0.9</visualSizeRange>
+		</plant>
+	</ThingDef>
+
+	<ThingDef ParentName="BushBase">
+		<defName>RG-AF_Plant_AnimaHeartBlossom</defName>
+		<label>anima heart blossom</label>
+		<description>.</description>
+		<descriptionHyperlinks>
+			<ThingDef>RG-AF_AnimaPearls</ThingDef>
+		</descriptionHyperlinks>
+		<statBases>
+			<Beauty>6</Beauty>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/RG_AnimaHeartBlossom</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>1</drawSize>
+			<shadowData>
+				<volume>(0.55, 0.2, 0.2)</volume>
+				<offset>(0,0,-0.1)</offset>
+			</shadowData>
+		</graphicData>
+		<plant>
+			<harvestYield>10</harvestYield>
+			<harvestTag>Standard</harvestTag>
+			<harvestedThingDef>RG-AF_AnimaPearls</harvestedThingDef>
+			<topWindExposure>0.07</topWindExposure>
+			<wildClusterRadius>-1</wildClusterRadius>
+		</plant>
+	</ThingDef>
+
+	<!--============================ Flowers =============================-->
+	<ThingDef ParentName="PlantBase">
+		<defName>RG-AF_Plant_AnimaBell</defName>
+		<label>anima bell</label>
+		<description>.</description>
+		<statBases>
+			<MaxHitPoints>85</MaxHitPoints>
+			<Beauty>4</Beauty>
+			<Nutrition>0.18</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/RG_AnimaBell</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<hideAtSnowDepth>0.5</hideAtSnowDepth>
+		<ingestible/>
+		<plant>
+			<fertilitySensitivity>0.0</fertilitySensitivity>
+			<growDays>2.5</growDays>
+			<sowTags>
+				<li>Ground</li>
+			</sowTags>
+			<fertilityMin>0.05</fertilityMin>
+			<visualSizeRange>0.7~0.8</visualSizeRange>
+			<topWindExposure>0.3</topWindExposure>
+			<wildClusterRadius>4</wildClusterRadius>
+			<wildClusterWeight>200</wildClusterWeight>
+			<wildOrder>1</wildOrder>
+			<purpose>Beauty</purpose>
+		</plant>
+	</ThingDef>
+
+	<ThingDef ParentName="PlantBase">
+		<defName>RG-AF_Plant_SentientBrambles</defName>
+		<label>sentient brambles</label>
+		<description>.</description>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Nutrition>0.2</Nutrition>
+		</statBases>
+		<pathCost>100</pathCost>
+		<graphicData>
+			<texPath>Things/Plant/RG_AnimaRoots</texPath>
+			<drawSize>1.4</drawSize>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<ingestible/>
+		<plant>
+			<fertilityMin>0.01</fertilityMin>
+			<fertilitySensitivity>0.0</fertilitySensitivity>
+			<growDays>3</growDays>
+			<harvestWork>60</harvestWork>
+			<maxMeshCount>4</maxMeshCount>
+			<leaflessGraphicPath>Things/Plant/Leafless/Brambles_Leafless</leaflessGraphicPath>
+			<visualSizeRange>0.7~0.85</visualSizeRange>
+			<topWindExposure>0.15</topWindExposure>
+			<wildClusterRadius>4</wildClusterRadius>
+			<wildClusterWeight>200</wildClusterWeight>
+			<wildOrder>1</wildOrder>
+			<wildEqualLocalDistribution>false</wildEqualLocalDistribution>
+		</plant>
+	</ThingDef>
+
+	<ThingDef ParentName="PlantBase">
+		<defName>RG-AF_Plant_MysticCap</defName>
+		<label>mystic cap</label>
+		<description>Can be harvested for raw fungus.</description>
+		<descriptionHyperlinks>
+			<ThingDef>RawFungus</ThingDef>
+		</descriptionHyperlinks>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Beauty>2</Beauty>
+			<Nutrition>0.35</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/RG_MysticCap</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<neverMultiSelect>false</neverMultiSelect>
+		<pathCost>10</pathCost>
+		<ingestible/>
+		<plant>
+			<fertilityMin>0.01</fertilityMin>
+			<fertilitySensitivity>0.0</fertilitySensitivity>
+			<growDays>10</growDays>
+			<dieIfLeafless>true</dieIfLeafless>
+			<harvestYield>10</harvestYield>
+			<harvestTag>Standard</harvestTag>
+			<harvestedThingDef>RawFungus</harvestedThingDef>
+			<maxMeshCount>4</maxMeshCount>
+			<neverBlightable>true</neverBlightable>
+			<visualSizeRange>0.4~0.7</visualSizeRange>
+			<topWindExposure>0</topWindExposure>
+			<wildClusterRadius>3</wildClusterRadius>
+			<wildClusterWeight>5</wildClusterWeight>
+			<mustBeWildToSow>true</mustBeWildToSow>
+			<purpose>Food</purpose>
+			<sowTags>
+				<li>Ground</li>
+			</sowTags>
+			<wildOrder>1</wildOrder>
+			<wildEqualLocalDistribution>false</wildEqualLocalDistribution>
+		</plant>
+	</ThingDef>
+
+	<!--============================ Wild - Trees ============================-->
+	<ThingDef ParentName="TreeBase">
+		<defName>RG-AF_Plant_TreeAnimaSapling</defName>
+		<label>anima sapling</label>
+		<description>.</description>
+		<descriptionHyperlinks>
+			<ThingDef>RG-AF_AnimaPearls</ThingDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Plant/RG_AnimaSapling</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shadowData>
+				<volume>(0.18, 0.3, 0.15)</volume>
+			</shadowData>
+		</graphicData>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<statBases>
+			<Beauty>1</Beauty>
+			<Nutrition>2.5</Nutrition>
+		</statBases>
+		<plant>
+			<fertilityMin>0</fertilityMin>
+			<fertilitySensitivity>0</fertilitySensitivity>
+			<growDays>14</growDays>
+			<harvestWork>1200</harvestWork>
+			<harvestYield>10</harvestYield>
+			<wildClusterRadius>10</wildClusterRadius>
+			<wildClusterWeight>11</wildClusterWeight>
+			<visualSizeRange>1.6~2.2</visualSizeRange>
+			<topWindExposure>0.1</topWindExposure>
+		</plant>
+		<ingestible/>
+	</ThingDef>
+
+	<ThingDef ParentName="TreeBase">
+		<defName>RG-AF_Plant_TreeAncientAnima</defName>
+		<label>ancient anima tree</label>
+		<description>.</description>
+		<graphicData>
+			<texPath>Things/Plant/RG_AncientAnimaTree</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shadowData>
+				<volume>(0.12, 0.08, 0.1)</volume>
+				<offset>(0,0,-0.25)</offset>
+			</shadowData>
+		</graphicData>
+		<drawGUIOverlay>True</drawGUIOverlay>
+		<statBases>
+			<Beauty>7</Beauty>
+			<MeditationFocusStrength>0.28</MeditationFocusStrength>
+			<Flammability>0</Flammability>
+			<MaxHitPoints>600</MaxHitPoints>
+		</statBases>
+		<ingestible/>
+		<preventSkyfallersLandingOn>true</preventSkyfallersLandingOn>
+		<plant>
+			<growDays>25</growDays>
+			<visualSizeRange>3.1~3.5</visualSizeRange>
+			<sowMinSkill>0</sowMinSkill>
+			<sowTags Inherit="False"/>
+			<harvestYield>10</harvestYield>
+			<harvestTag>Standard</harvestTag>
+			<harvestedThingDef>RG-AF_AnimaPearls</harvestedThingDef>
+			<dieIfNoSunlight>False</dieIfNoSunlight>
+			<dieFromToxicFallout>False</dieFromToxicFallout>
+			<lifespanDaysPerGrowDays>0</lifespanDaysPerGrowDays>
+			<fertilityMin>0.02</fertilityMin>
+			<fertilitySensitivity>0</fertilitySensitivity>
+			<sowResearchPrerequisites Inherit="False"/>
+			<topWindExposure>0.05</topWindExposure>
+		</plant>
+		<comps>
+			<li Class="CompProperties_MeditationFocus">
+				<statDef>MeditationFocusStrength</statDef>
+				<focusTypes>
+					<li>Natural</li>
+				</focusTypes>
+				<offsets>
+					<li Class="FocusStrengthOffset_ArtificialBuildings">
+						<radius>34.9</radius>
+						<curve>
+							<points>
+								<li>(0,   0.0)</li>
+								<li>(5,  -0.08)</li>
+								<li>(10, -0.15)</li>
+								<li>(50, -0.3)</li>
+							</points>
+						</curve>
+					</li>
+					<li Class="FocusStrengthOffset_BuildingDefs">
+						<defs>
+							<AnimusStone>0.02</AnimusStone>
+							<NatureShrine_Small>0.01</NatureShrine_Small>
+							<NatureShrine_Large>0.01</NatureShrine_Large>
+						</defs>
+						<radius>9.9</radius>
+						<maxBuildings>4</maxBuildings>
+						<explanationKey>MeditationFocusPerAnimusStoneAndShrine</explanationKey>
+						<explanationKeyAbstract>MeditationFocusPerAnimusStoneAndShrineAbstract</explanationKeyAbstract>
+					</li>
+				</offsets>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>3.75</glowRadius>
+				<glowColor>(110,116,125,0)</glowColor>
+			</li>
+			<li Class="CompProperties_SpawnSubplant">
+				<subplant>RG-AF_AnimaBush</subplant>
+				<spawnSound>AnimaTreeProgress</spawnSound>
+			</li>
+			<li Class="CompProperties_Psylinkable">
+				<requiredSubplantCountPerPsylinkLevel>
+					<li>20</li>
+					<li>20</li>
+					<li>20</li>
+					<li>20</li>
+					<li>20</li>
+					<li>20</li>
+				</requiredSubplantCountPerPsylinkLevel>
+				<requiredFocus>Natural</requiredFocus>
+				<linkSound>AnimaTreeLink</linkSound>
+				<enoughPlantsLetterLabel>About: Anima tree linking</enoughPlantsLetterLabel>
+				<enoughPlantsLetterText>The ancient anima tree now has {0} anima bushes around it. This is enough for a tribal person to begin their first linking ritual!\n\nThe linking ritual gives a level of psylink and the ability to use psychic powers. Upgrading to a higher level requires more bushes at each level.\n\nThe anima bush requirements for linking rituals to upgrade psycasters are:\n\n{1}\n\nNote: Only those with the nature focus type can meditate to or link with anima trees. You can see a person's focus types by looking at their info card with the ‘i' button.</enoughPlantsLetterText>
+			</li>
+			<li Class="CompProperties_GiveThoughtToAllMapPawnsOnDestroy">
+				<thought>AnimaScream</thought>
+				<message>The ancient anima tree has died and emitted a disturbing psychic scream.</message>
+			</li>
+			<li Class="CompProperties_PlaySoundOnDestroy">
+				<sound>AnimaTreeScream</sound>
+			</li>
+			<li Class="CompProperties_SelfhealHitpoints">
+				<ticksPerHeal>2000</ticksPerHeal>
+				<!-- 30 hp per day, must be a multiple of 2000, since plants have Long ticker -->
+			</li>
+			<li Class="CompProperties_ToggleDrawAffectedMeditationFoci"/>
+		</comps>
+	</ThingDef>
+
+</Defs>
