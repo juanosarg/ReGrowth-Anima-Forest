@@ -148,11 +148,15 @@
 			<RG_Hail>1</RG_Hail>
 		</baseWeatherCommonalities>
 		<wildPlants>
-			<Plant_Grass>3</Plant_Grass>
-			<Plant_GrassAnima>8</Plant_GrassAnima>
-			<RG-AF_Plant_TallGrassAnima>4</RG-AF_Plant_TallGrassAnima>
+			<Plant_Grass>8</Plant_Grass>
+			<Plant_TallGrass>3</Plant_TallGrass>
+			<Plant_Bush>0.8</Plant_Bush>
+			<Plant_GrassAnima>4</Plant_GrassAnima>
 			<RG-AF_Plant_SentientBrambles>3</RG-AF_Plant_SentientBrambles>
-			<RG-AF_Plant_AnimaBush>3</RG-AF_Plant_AnimaBush>
+			<RG-AF_Plant_AnimaBell>1</RG-AF_Plant_AnimaBell>
+			<RG-AF_Plant_TreeAnima>0.5</RG-AF_Plant_TreeAnima>
+			<RG-AF_Plant_AnimaTreeJadeite>0.02</RG-AF_Plant_AnimaTreeJadeite>
+			<RG-AF_Plant_TreeAnimaAncient>0.1</RG-AF_Plant_TreeAnimaAncient>
 		</wildPlants>
 		<wildAnimals>
 			<Hare>1</Hare>

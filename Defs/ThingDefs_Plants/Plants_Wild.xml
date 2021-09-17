@@ -1,56 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<ThingDef ParentName="PlantBaseNonEdible">
-		<defName>RG-AF_Plant_TallGrassAnima</defName>
-		<label>anima grass</label>
-		<description>A grass infused with luminous microorganisms. Tribal peoples find that anima grass grows around the base of an anima tree as they meditate. It seems to reflect some kind of strengthening of the tree's psychic power.\n\nOffworld scientists have tried to study the phenomenon, but the grass degenerates into normal plant matter when observed too closely.\n\nAnimals refuse eat anima grass. Tribal stories say this is done out of respect and fear.</description>
-		<statBases>
-			<MaxHitPoints>85</MaxHitPoints>
-			<Flammability>1.3</Flammability>
-		</statBases>
-		<graphicData>
-			<texPath>Things/Plant/Grass_Anima</texPath>
-			<graphicClass>Graphic_Random</graphicClass>
-		</graphicData>
-		<hideAtSnowDepth>0.5</hideAtSnowDepth>
-		<plant>
-			<fertilityMin>0.02</fertilityMin>
-			<fertilitySensitivity>0</fertilitySensitivity>
-			<sowMinSkill>0</sowMinSkill>
-			<growDays>1</growDays>
-			<lifespanDaysPerGrowDays>60</lifespanDaysPerGrowDays>
-			<harvestWork>40</harvestWork>
-			<maxMeshCount>9</maxMeshCount>
-			<visualSizeRange>0.6~0.85</visualSizeRange>
-			<topWindExposure>0.4</topWindExposure>
-			<wildOrder>1</wildOrder>
-			<dieFromToxicFallout>False</dieFromToxicFallout>
-			<allowAutoCut>false</allowAutoCut>
-		</plant>
-	</ThingDef>
+	<!--============================ Vanilla Versions =============================-->
+
+
 	<!--============================ Bushes =============================-->
-	<ThingDef ParentName="BushBase">
-		<defName>RG-AF_Plant_AnimaBush</defName>
-		<label>anima bush</label>
-		<description>.</description>
-		<pathCost>50</pathCost>
-		<graphicData>
-			<texPath>Things/Plant/RG_AnimaBush</texPath>
-			<graphicClass>Graphic_Random</graphicClass>
-			<shadowData>
-				<volume>(0.55, 0.17, 0.15)</volume>
-				<offset>(0,0,-0.2)</offset>
-			</shadowData>
-		</graphicData>
-		<plant>
-			<fertilityMin>0</fertilityMin>
-			<fertilitySensitivity>0</fertilitySensitivity>
-			<wildClusterRadius>4</wildClusterRadius>
-			<wildClusterWeight>7.5</wildClusterWeight>
-			<visualSizeRange>0.75~0.9</visualSizeRange>
-		</plant>
-	</ThingDef>
 
 	<ThingDef ParentName="BushBase">
 		<defName>RG-AF_Plant_AnimaHeartBlossom</defName>
@@ -63,7 +17,7 @@
 			<Beauty>6</Beauty>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Plant/RG_AnimaHeartBlossom</texPath>
+			<texPath>Things/Plant/AnimaHeartBlossom</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
 			<drawSize>1</drawSize>
 			<shadowData>
@@ -91,7 +45,7 @@
 			<Nutrition>0.18</Nutrition>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Plant/RG_AnimaBell</texPath>
+			<texPath>Things/Plant/AnimaBell</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
 		</graphicData>
 		<hideAtSnowDepth>0.5</hideAtSnowDepth>
@@ -122,7 +76,7 @@
 		</statBases>
 		<pathCost>100</pathCost>
 		<graphicData>
-			<texPath>Things/Plant/RG_AnimaRoots</texPath>
+			<texPath>Things/Plant/AnimaRoots</texPath>
 			<drawSize>1.4</drawSize>
 			<graphicClass>Graphic_Random</graphicClass>
 		</graphicData>
@@ -156,7 +110,7 @@
 			<Nutrition>0.35</Nutrition>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Plant/RG_MysticCap</texPath>
+			<texPath>Things/Plant/MysticCap</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
 		</graphicData>
 		<selectable>true</selectable>
@@ -196,7 +150,7 @@
 			<ThingDef>RG-AF_AnimaPearls</ThingDef>
 		</descriptionHyperlinks>
 		<graphicData>
-			<texPath>Things/Plant/RG_AnimaSapling</texPath>
+			<texPath>Things/Plant/AnimaSapling</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
 			<shadowData>
 				<volume>(0.18, 0.3, 0.15)</volume>
@@ -220,13 +174,66 @@
 		</plant>
 		<ingestible/>
 	</ThingDef>
-
+	
+	<ThingDef ParentName="TreeBase" Name="TreeAnima">
+		<defName>RG-AF_Plant_TreeAnima</defName>
+		<label>anima tree</label>
+		<description>A rare tree with warm, skin-smooth bark and long iridescent leaves. Infused with bioluminescent micro-organisms, anima trees develop a unique form of psychic symbiosis with surrounding lifeforms, allowing them to grow in a wide variety of biomes.\n\nIf a person (psycaster or not) meditates near an anima tree, it will grow anima grass around its base. Once enough grass is grown, it becomes possible to carry out a psychic linking ritual with the tree and upgrade a person's psychic powers. Only tribal peoples know the secret of this ritual. Tribal psycasters are also able to draw psyfocus from anima trees while meditating to them.\n\nAnima trees' psychic properties are weakened if artificial structures are placed nearby. They refuse to be caged or studied, and must remain part of nature.\n\nMost tribes believe that anima trees are not simply trees, but are rather the physical extremities of a single world spirit.</description>
+		<graphicData>
+			<texPath>Things/Plant/TreeAnima</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shadowData>
+				<volume>(0.12, 0.08, 0.1)</volume>
+				<offset>(0,0,-0.25)</offset>
+			</shadowData>
+		</graphicData>
+		<drawGUIOverlay>True</drawGUIOverlay>
+		<minifiedDef IsNull="True"/>
+		<statBases>
+			<Beauty>5</Beauty>
+			<BeautyOutdoors>5</BeautyOutdoors>
+			<MeditationFocusStrength>0.28</MeditationFocusStrength>
+			<Flammability>0</Flammability>
+			<MaxHitPoints>400</MaxHitPoints>
+			<MeditationPlantGrowthOffset>0</MeditationPlantGrowthOffset>
+		</statBases>
+		<ingestible/>
+		<preventSkyfallersLandingOn>true</preventSkyfallersLandingOn>
+		<plant>
+			<growDays>25</growDays>
+			<visualSizeRange>1.8~2.5</visualSizeRange>
+			<sowMinSkill>0</sowMinSkill>
+			<sowTags Inherit="False"/>
+			<dieIfNoSunlight>False</dieIfNoSunlight>
+			<dieFromToxicFallout>False</dieFromToxicFallout>
+			<lifespanDaysPerGrowDays>0</lifespanDaysPerGrowDays>
+			<fertilityMin>0.02</fertilityMin>
+			<fertilitySensitivity>0</fertilitySensitivity>
+			<sowResearchPrerequisites Inherit="False"/>
+			<allowAutoCut>false</allowAutoCut>
+			<warnIfMarkedForCut>true</warnIfMarkedForCut>
+		</plant>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>2.5</glowRadius>
+				<glowColor>(110,116,125,0)</glowColor>
+			</li>
+			<li Class="CompProperties_GiveThoughtToAllMapPawnsOnDestroy">
+				<thought>AnimaScream</thought>
+				<message>The anima tree has died and emitted a disturbing psychic scream.</message>
+			</li>
+			<li Class="CompProperties_PlaySoundOnDestroy">
+				<sound>AnimaTreeScream</sound>
+			</li>
+		</comps>
+	</ThingDef>
+	
 	<ThingDef ParentName="TreeBase">
-		<defName>RG-AF_Plant_TreeAncientAnima</defName>
+		<defName>RG-AF_Plant_TreeAnimaAncient</defName>
 		<label>ancient anima tree</label>
 		<description>.</description>
 		<graphicData>
-			<texPath>Things/Plant/RG_AncientAnimaTree</texPath>
+			<texPath>Things/Plant/AnimaTreeAncient</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
 			<shadowData>
 				<volume>(0.12, 0.08, 0.1)</volume>
@@ -244,12 +251,11 @@
 		<preventSkyfallersLandingOn>true</preventSkyfallersLandingOn>
 		<plant>
 			<growDays>25</growDays>
-			<visualSizeRange>3.1~3.5</visualSizeRange>
+			<visualSizeRange>3.8~4.5</visualSizeRange>
 			<sowMinSkill>0</sowMinSkill>
 			<sowTags Inherit="False"/>
 			<harvestYield>10</harvestYield>
 			<harvestTag>Standard</harvestTag>
-			<harvestedThingDef>RG-AF_AnimaPearls</harvestedThingDef>
 			<dieIfNoSunlight>False</dieIfNoSunlight>
 			<dieFromToxicFallout>False</dieFromToxicFallout>
 			<lifespanDaysPerGrowDays>0</lifespanDaysPerGrowDays>
@@ -259,70 +265,120 @@
 			<topWindExposure>0.05</topWindExposure>
 		</plant>
 		<comps>
-			<li Class="CompProperties_MeditationFocus">
-				<statDef>MeditationFocusStrength</statDef>
-				<focusTypes>
-					<li>Natural</li>
-				</focusTypes>
-				<offsets>
-					<li Class="FocusStrengthOffset_ArtificialBuildings">
-						<radius>34.9</radius>
-						<curve>
-							<points>
-								<li>(0,   0.0)</li>
-								<li>(5,  -0.08)</li>
-								<li>(10, -0.15)</li>
-								<li>(50, -0.3)</li>
-							</points>
-						</curve>
-					</li>
-					<li Class="FocusStrengthOffset_BuildingDefs">
-						<defs>
-							<AnimusStone>0.02</AnimusStone>
-							<NatureShrine_Small>0.01</NatureShrine_Small>
-							<NatureShrine_Large>0.01</NatureShrine_Large>
-						</defs>
-						<radius>9.9</radius>
-						<maxBuildings>4</maxBuildings>
-						<explanationKey>MeditationFocusPerAnimusStoneAndShrine</explanationKey>
-						<explanationKeyAbstract>MeditationFocusPerAnimusStoneAndShrineAbstract</explanationKeyAbstract>
-					</li>
-				</offsets>
-			</li>
 			<li Class="CompProperties_Glower">
-				<glowRadius>3.75</glowRadius>
+				<glowRadius>2.5</glowRadius>
 				<glowColor>(110,116,125,0)</glowColor>
-			</li>
-			<li Class="CompProperties_SpawnSubplant">
-				<subplant>RG-AF_AnimaBush</subplant>
-				<spawnSound>AnimaTreeProgress</spawnSound>
-			</li>
-			<li Class="CompProperties_Psylinkable">
-				<requiredSubplantCountPerPsylinkLevel>
-					<li>20</li>
-					<li>20</li>
-					<li>20</li>
-					<li>20</li>
-					<li>20</li>
-					<li>20</li>
-				</requiredSubplantCountPerPsylinkLevel>
-				<requiredFocus>Natural</requiredFocus>
-				<linkSound>AnimaTreeLink</linkSound>
-				<enoughPlantsLetterLabel>About: Anima tree linking</enoughPlantsLetterLabel>
-				<enoughPlantsLetterText>The ancient anima tree now has {0} anima bushes around it. This is enough for a tribal person to begin their first linking ritual!\n\nThe linking ritual gives a level of psylink and the ability to use psychic powers. Upgrading to a higher level requires more bushes at each level.\n\nThe anima bush requirements for linking rituals to upgrade psycasters are:\n\n{1}\n\nNote: Only those with the nature focus type can meditate to or link with anima trees. You can see a person's focus types by looking at their info card with the ‘i' button.</enoughPlantsLetterText>
 			</li>
 			<li Class="CompProperties_GiveThoughtToAllMapPawnsOnDestroy">
 				<thought>AnimaScream</thought>
-				<message>The ancient anima tree has died and emitted a disturbing psychic scream.</message>
+				<message>The anima tree has died and emitted a disturbing psychic scream.</message>
 			</li>
 			<li Class="CompProperties_PlaySoundOnDestroy">
 				<sound>AnimaTreeScream</sound>
 			</li>
-			<li Class="CompProperties_SelfhealHitpoints">
-				<ticksPerHeal>2000</ticksPerHeal>
-				<!-- 30 hp per day, must be a multiple of 2000, since plants have Long ticker -->
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="TreeBase">
+		<defName>RG-AF_Plant_AnimaTreeJadeite</defName>
+		<label>jadeite tree</label>
+		<description>.</description>
+		<graphicData>
+			<texPath>Things/Plant/AnimaTreeJadeite</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shadowData>
+				<volume>(0.12, 0.08, 0.1)</volume>
+				<offset>(0,0,-0.25)</offset>
+			</shadowData>
+		</graphicData>
+		<drawGUIOverlay>True</drawGUIOverlay>
+		<statBases>
+			<Beauty>7</Beauty>
+			<MeditationFocusStrength>0.28</MeditationFocusStrength>
+			<Flammability>0</Flammability>
+			<MaxHitPoints>600</MaxHitPoints>
+		</statBases>
+		<ingestible/>
+		<preventSkyfallersLandingOn>true</preventSkyfallersLandingOn>
+		<plant>
+			<growDays>50</growDays>
+			<visualSizeRange>2.8~3.5</visualSizeRange>
+			<sowMinSkill>0</sowMinSkill>
+			<sowTags Inherit="False"/>
+			<harvestYield>10</harvestYield>
+			<harvestTag>Standard</harvestTag>
+			<harvestedThingDef>Jade</harvestedThingDef>
+			<dieIfNoSunlight>False</dieIfNoSunlight>
+			<dieFromToxicFallout>False</dieFromToxicFallout>
+			<lifespanDaysPerGrowDays>0</lifespanDaysPerGrowDays>
+			<fertilityMin>0.02</fertilityMin>
+			<fertilitySensitivity>0</fertilitySensitivity>
+			<sowResearchPrerequisites Inherit="False"/>
+			<topWindExposure>0.05</topWindExposure>
+		</plant>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>2.5</glowRadius>
+				<glowColor>(110,116,125,0)</glowColor>
 			</li>
-			<li Class="CompProperties_ToggleDrawAffectedMeditationFoci"/>
+			<li Class="CompProperties_GiveThoughtToAllMapPawnsOnDestroy">
+				<thought>AnimaScream</thought>
+				<message>The anima tree has died and emitted a disturbing psychic scream.</message>
+			</li>
+			<li Class="CompProperties_PlaySoundOnDestroy">
+				<sound>AnimaTreeScream</sound>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="TreeBase">
+		<defName>RG-AF_Plant_AnimaTreeElder</defName>
+		<label>ancient anima tree</label>
+		<description>.</description>
+		<graphicData>
+			<texPath>Things/Plant/AnimaTreeElder</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shadowData>
+				<volume>(0.12, 0.08, 0.1)</volume>
+				<offset>(0,0,-0.25)</offset>
+			</shadowData>
+		</graphicData>
+		<drawGUIOverlay>True</drawGUIOverlay>
+		<statBases>
+			<Beauty>7</Beauty>
+			<MeditationFocusStrength>0.28</MeditationFocusStrength>
+			<Flammability>0</Flammability>
+			<MaxHitPoints>600</MaxHitPoints>
+		</statBases>
+		<ingestible/>
+		<preventSkyfallersLandingOn>true</preventSkyfallersLandingOn>
+		<plant>
+			<growDays>25</growDays>
+			<visualSizeRange>4.5~5.2</visualSizeRange>
+			<sowMinSkill>0</sowMinSkill>
+			<sowTags Inherit="False"/>
+			<harvestYield>10</harvestYield>
+			<harvestTag>Standard</harvestTag>
+			<dieIfNoSunlight>False</dieIfNoSunlight>
+			<dieFromToxicFallout>False</dieFromToxicFallout>
+			<lifespanDaysPerGrowDays>0</lifespanDaysPerGrowDays>
+			<fertilityMin>0.02</fertilityMin>
+			<fertilitySensitivity>0</fertilitySensitivity>
+			<sowResearchPrerequisites Inherit="False"/>
+			<topWindExposure>0.05</topWindExposure>
+		</plant>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>6.5</glowRadius>
+				<glowColor>(110,116,125,0)</glowColor>
+			</li>
+			<li Class="CompProperties_GiveThoughtToAllMapPawnsOnDestroy">
+				<thought>AnimaScream</thought>
+				<message>The anima tree has died and emitted a disturbing psychic scream.</message>
+			</li>
+			<li Class="CompProperties_PlaySoundOnDestroy">
+				<sound>AnimaTreeScream</sound>
+			</li>
 		</comps>
 	</ThingDef>
 
