@@ -5,7 +5,7 @@
 		<defName>RG-AF_AnimaForest</defName>
 		<label>anima forest</label>
 		<description>A legendary biome featured in folk tales of tribal groups for centuries. Highly revered, this forest allows ancient tribes to gain immense psychic powers, but it requires respect and absence of any technology. Players can choose to settle in Anima Forest, angering other tribes and possibly excavating rare resources at the cost of the wrath of the forest.</description>
-		<workerClass>ReGrowthAspenForest.BiomeWorker_AspenForest</workerClass>
+		<workerClass>ReGrowthCore.BiomeWorker_AnimaForest</workerClass>
 		<animalDensity>1.5</animalDensity>
 		<plantDensity>1.5</plantDensity>
 		<settlementSelectionWeight>0.25</settlementSelectionWeight>
