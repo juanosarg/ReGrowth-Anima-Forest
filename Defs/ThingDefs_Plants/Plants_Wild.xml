@@ -1,11 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<!--============================ Vanilla Versions =============================-->
-
-
-	<!--============================ Bushes =============================-->
-
 	<ThingDef ParentName="BushBase">
 		<defName>RG-AF_Plant_AnimaHeartBlossom</defName>
 		<label>anima heart blossom</label>
@@ -33,6 +28,68 @@
 			<wildClusterRadius>-1</wildClusterRadius>
 		</plant>
 	</ThingDef>
+	
+	<ThingDef ParentName="PlantBase">
+		<defName>RG-AF_Plant_AnimaRoot</defName>
+		<label>anima root</label>
+		<description>.</description>
+		<statBases>
+			<MaxHitPoints>90</MaxHitPoints>
+			<Nutrition>0.25</Nutrition>
+		</statBases>
+		<pathCost>14</pathCost>
+		<graphicData>
+			<texPath>Things/Plant/AnimaRoot</texPath>
+		</graphicData>
+		<hideAtSnowDepth>0.5</hideAtSnowDepth>
+		<ingestible/>
+		<plant>
+			<fertilitySensitivity>0.7</fertilitySensitivity>
+			<growDays>3</growDays>
+			<harvestWork>60</harvestWork>
+			<maxMeshCount>4</maxMeshCount>
+			<visualSizeRange>0.85~1.25</visualSizeRange>
+			<topWindExposure>0.5</topWindExposure>
+			<wildClusterRadius>3</wildClusterRadius>
+			<wildClusterWeight>40</wildClusterWeight>
+			<wildOrder>1</wildOrder>
+		</plant>
+			<li Class="CompProperties_Glower">
+				<glowRadius>1.2</glowRadius>
+				<glowColor>(110,116,125,0)</glowColor>
+			</li>
+	</ThingDef>
+	
+	<ThingDef ParentName="PlantBase">
+		<defName>RG-AF_Plant_AnimaBrambles</defName>
+		<label>anima brambles</label>
+		<description>.</description>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Nutrition>0.2</Nutrition>
+		</statBases>
+		<pathCost>100</pathCost>
+		<graphicData>
+			<texPath>Things/Plant/AnimaBrambles</texPath>
+			<drawSize>1.4</drawSize>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<ingestible/>
+		<plant>
+			<fertilityMin>0.01</fertilityMin>
+			<fertilitySensitivity>0.0</fertilitySensitivity>
+			<growDays>3</growDays>
+			<harvestWork>60</harvestWork>
+			<maxMeshCount>4</maxMeshCount>
+			<leaflessGraphicPath>Things/Plant/Leafless/Brambles_Leafless</leaflessGraphicPath>
+			<visualSizeRange>0.7~0.85</visualSizeRange>
+			<topWindExposure>0.15</topWindExposure>
+			<wildClusterRadius>4</wildClusterRadius>
+			<wildClusterWeight>200</wildClusterWeight>
+			<wildOrder>1</wildOrder>
+			<wildEqualLocalDistribution>false</wildEqualLocalDistribution>
+		</plant>
+	</ThingDef>
 
 	<!--============================ Flowers =============================-->
 	<ThingDef ParentName="PlantBase">
@@ -53,9 +110,7 @@
 		<plant>
 			<fertilitySensitivity>0.0</fertilitySensitivity>
 			<growDays>2.5</growDays>
-			<sowTags>
-				<li>Ground</li>
-			</sowTags>
+			<maxMeshCount>4</maxMeshCount>
 			<fertilityMin>0.05</fertilityMin>
 			<visualSizeRange>0.7~0.8</visualSizeRange>
 			<topWindExposure>0.3</topWindExposure>
@@ -63,37 +118,6 @@
 			<wildClusterWeight>200</wildClusterWeight>
 			<wildOrder>1</wildOrder>
 			<purpose>Beauty</purpose>
-		</plant>
-	</ThingDef>
-
-	<ThingDef ParentName="PlantBase">
-		<defName>RG-AF_Plant_SentientBrambles</defName>
-		<label>sentient brambles</label>
-		<description>.</description>
-		<statBases>
-			<MaxHitPoints>100</MaxHitPoints>
-			<Nutrition>0.2</Nutrition>
-		</statBases>
-		<pathCost>100</pathCost>
-		<graphicData>
-			<texPath>Things/Plant/AnimaRoots</texPath>
-			<drawSize>1.4</drawSize>
-			<graphicClass>Graphic_Random</graphicClass>
-		</graphicData>
-		<ingestible/>
-		<plant>
-			<fertilityMin>0.01</fertilityMin>
-			<fertilitySensitivity>0.0</fertilitySensitivity>
-			<growDays>3</growDays>
-			<harvestWork>60</harvestWork>
-			<maxMeshCount>4</maxMeshCount>
-			<leaflessGraphicPath>Things/Plant/Leafless/Brambles_Leafless</leaflessGraphicPath>
-			<visualSizeRange>0.7~0.85</visualSizeRange>
-			<topWindExposure>0.15</topWindExposure>
-			<wildClusterRadius>4</wildClusterRadius>
-			<wildClusterWeight>200</wildClusterWeight>
-			<wildOrder>1</wildOrder>
-			<wildEqualLocalDistribution>false</wildEqualLocalDistribution>
 		</plant>
 	</ThingDef>
 
@@ -140,7 +164,6 @@
 			<wildEqualLocalDistribution>false</wildEqualLocalDistribution>
 		</plant>
 	</ThingDef>
-
 	<!--============================ Wild - Trees ============================-->
 	<ThingDef ParentName="TreeBase">
 		<defName>RG-AF_Plant_TreeAnimaSapling</defName>
@@ -174,7 +197,6 @@
 		</plant>
 		<ingestible/>
 	</ThingDef>
-	
 	<ThingDef ParentName="TreeBase" Name="TreeAnima">
 		<defName>RG-AF_Plant_TreeAnima</defName>
 		<label>anima tree</label>
@@ -227,7 +249,6 @@
 			</li>
 		</comps>
 	</ThingDef>
-	
 	<ThingDef ParentName="TreeBase">
 		<defName>RG-AF_Plant_TreeAnimaAncient</defName>
 		<label>ancient anima tree</label>
@@ -278,7 +299,6 @@
 			</li>
 		</comps>
 	</ThingDef>
-
 	<ThingDef ParentName="TreeBase">
 		<defName>RG-AF_Plant_AnimaTreeJadeite</defName>
 		<label>jadeite tree</label>
@@ -330,7 +350,6 @@
 			</li>
 		</comps>
 	</ThingDef>
-	
 	<ThingDef ParentName="TreeBase">
 		<defName>RG-AF_Plant_AnimaTreeElder</defName>
 		<label>ancient anima tree</label>
@@ -381,5 +400,4 @@
 			</li>
 		</comps>
 	</ThingDef>
-
 </Defs>

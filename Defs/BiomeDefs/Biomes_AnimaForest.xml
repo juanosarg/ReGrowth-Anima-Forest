@@ -2,7 +2,7 @@
 <Defs>
 
 	<BiomeDef>
-		<defName>RG-AF_AnimaForest</defName>
+		<defName>RG_AF_AnimaForest</defName>
 		<label>anima forest</label>
 		<description>A legendary biome featured in folk tales of tribal groups for centuries. Highly revered, this forest allows ancient tribes to gain immense psychic powers, but it requires respect and absence of any technology. Players can choose to settle in Anima Forest, angering other tribes and possibly excavating rare resources at the cost of the wrath of the forest.</description>
 		<workerClass>ReGrowthCore.BiomeWorker_AnimaForest</workerClass>
@@ -49,49 +49,23 @@
 		</diseases>
 		<terrainsByFertility>
 			<li>
-				<terrain>Soil</terrain>
+				<terrain>RG_AnimaSoil</terrain>
 				<min>-999</min>
-				<max>0.50</max>
+				<max>0.90</max>
 			</li>
 			<li>
-				<terrain>RG_AnimaSentientSoil</terrain>
-				<min>0.50</min>
-				<max>0.97</max>
-			</li>
-			<li>
-				<terrain>SoilRich</terrain>
-				<min>0.97</min>
+				<terrain>RG_AnimaSoilEnchanted</terrain>
+				<min>0.90</min>
 				<max>999</max>
 			</li>
 		</terrainsByFertility>
 		<terrainPatchMakers>
 			<li>
-				<perlinFrequency>0.03</perlinFrequency>
-				<minSize>20</minSize>
+				<perlinFrequency>0.05</perlinFrequency>
 				<thresholds>
 					<li>
-						<terrain>RG_AnimaSentientSoil</terrain>
-						<min>-0.10</min>
-						<max>0.16</max>
-					</li>
-					<li>
-						<terrain>RG_CrackedAnimaSoil</terrain>
-						<min>0.16</min>
-						<max>0.36</max>
-					</li>
-					<li>
-						<terrain>RG_EnchantedAnimaSoil</terrain>
-						<min>0.36</min>
-						<max>0.50</max>
-					</li>
-					<li>
-						<terrain>RG_CrackedAnimaSoil</terrain>
-						<min>0.50</min>
-						<max>0.76</max>
-					</li>
-					<li>
-						<terrain>RG_AnimaSentientSoil</terrain>
-						<min>0.76</min>
+						<terrain>RG_AnimaSoilCracked</terrain>
+						<min>0.6</min>
 						<max>999</max>
 					</li>
 				</thresholds>
@@ -127,7 +101,7 @@
 						<max>-0.45</max>
 					</li>
 					<li>
-						<terrain>RG_AnimaSentientSoil</terrain>
+						<terrain>RG_AnimaSoilEnchanted</terrain>
 						<min>-0.45</min>
 						<max>-0.38</max>
 					</li>
@@ -150,13 +124,10 @@
 		<wildPlants>
 			<Plant_Grass>8</Plant_Grass>
 			<Plant_TallGrass>3</Plant_TallGrass>
-			<Plant_Bush>0.8</Plant_Bush>
 			<Plant_GrassAnima>4</Plant_GrassAnima>
-			<RG-AF_Plant_SentientBrambles>3</RG-AF_Plant_SentientBrambles>
+			<RG-AF_Plant_AnimaRoot>1</RG-AF_Plant_AnimaRoot>
+			<RG-AF_Plant_AnimaBrambles>3</RG-AF_Plant_AnimaBrambles>
 			<RG-AF_Plant_AnimaBell>1</RG-AF_Plant_AnimaBell>
-			<RG-AF_Plant_TreeAnima>0.5</RG-AF_Plant_TreeAnima>
-			<RG-AF_Plant_AnimaTreeJadeite>0.02</RG-AF_Plant_AnimaTreeJadeite>
-			<RG-AF_Plant_TreeAnimaAncient>0.1</RG-AF_Plant_TreeAnimaAncient>
 		</wildPlants>
 		<wildAnimals>
 			<Hare>1</Hare>
