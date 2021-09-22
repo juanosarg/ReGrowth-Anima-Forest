@@ -190,6 +190,7 @@
     </Reference>
     <Reference Include="UnityEngine.SubsystemsModule">
       <HintPath>..\..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.SubsystemsModule.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.TerrainModule">
       <HintPath>..\..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.TerrainModule.dll</HintPath>
@@ -294,6 +295,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BiomeWorkers\BiomeWorker_AnimaForest.cs" />
+    <Compile Include="DefOfs\InternalDefOf.cs" />
     <Compile Include="Harmony\GenStep_Terrain_TerrainFrom.cs" />
     <Compile Include="Harmony\HarmonyInstance.cs" />
     <Compile Include="Harmony\World_NaturalRockTypesIn.cs" />

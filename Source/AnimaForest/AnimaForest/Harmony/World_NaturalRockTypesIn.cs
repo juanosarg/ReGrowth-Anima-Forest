@@ -34,10 +34,10 @@ namespace AnimaForest
                 return;
             }
 
-            if (__instance.grid.tiles[tile].biome.defName == "RG_AnimaForest")
+            if (__instance.grid.tiles[tile].biome == InternalDefOf.RG_AF_AnimaForest)
             {
                 List<ThingDef> replacedList = new List<ThingDef>();
-                ThingDef item = DefDatabase<ThingDef>.GetNamed("RG_Jadeite");
+                ThingDef item = InternalDefOf.RG_Jadeite;
                 replacedList.Add(item);
 
                 __result = replacedList;
@@ -50,7 +50,7 @@ namespace AnimaForest
                                        where d.category == ThingCategory.Building && d.building.isNaturalRock && !d.building.isResourceRock &&
                                        !d.IsSmoothed && d.defName != "GU_RoseQuartz" && d.defName != "AB_Mudstone" && d.defName != "AB_SlimeStone" &&
                                        d.defName != "GU_AncientMetals" && d.defName != "AB_Cragstone" && d.defName != "AB_Obsidianstone" && d.defName != "BiomesIslands_CoralRock"
-                                       && d.defName != "RG_Jadeite"
+                                       && d != InternalDefOf.RG_Jadeite
                                        select d).ToList<ThingDef>();
                 int num = Rand.RangeInclusive(2, 3);
                 if (num > list.Count)

@@ -5,5 +5,4 @@ E:\SteamLibrary\steamapps\common\RimWorld\Mods\[HLX] ReGrowth - Anima Forest\1.2
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\ReGrowth-Anima-Forest\Assemblies\AnimaForest.dll
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\ReGrowth-Anima-Forest\Source\AnimaForest\AnimaForest\obj\Debug\AnimaForest.csprojAssemblyReference.cache
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\ReGrowth-Anima-Forest\Source\AnimaForest\AnimaForest\obj\Debug\AnimaForest.csproj.CoreCompileInputs.cache
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\ReGrowth-Anima-Forest\Source\AnimaForest\AnimaForest\obj\Debug\AnimaForest.csproj.CopyComplete
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\ReGrowth-Anima-Forest\Source\AnimaForest\AnimaForest\obj\Debug\AnimaForest.dll
