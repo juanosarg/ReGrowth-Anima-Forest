@@ -130,6 +130,8 @@
 			<RG_Windy>8</RG_Windy>
 			<RG_Monsoon>0.5</RG_Monsoon>
 			<RG_Hail>1</RG_Hail>
+			<RG_Hail>1</RG_Hail>
+			<RG_AF_PsychicFog>1</RG_AF_PsychicFog>
 		</baseWeatherCommonalities>
 		<wildPlants>
 			<Plant_Grass>8</Plant_Grass>

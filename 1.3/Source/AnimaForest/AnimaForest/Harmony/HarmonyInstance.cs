@@ -8,13 +8,8 @@ using System.Linq;
 using System;
 using RimWorld.BaseGen;
 
-
-
 namespace AnimaForest
 {
-
-
-
     //Setting the Harmony instance
     [StaticConstructorOnStartup]
     public class Main
@@ -24,13 +19,5 @@ namespace AnimaForest
             var harmony = new Harmony("com.animaforest");
             harmony.PatchAll(Assembly.GetExecutingAssembly());
         }
-
-
     }
-
-
-
-
-
-
 }

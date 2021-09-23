@@ -23,10 +23,10 @@ namespace AnimaForest
 
         {
             
-            if ((__result == TerrainDefOf.Gravel) && (map.Biome == InternalDefOf.RG_AF_AnimaForest))
+            if ((__result == TerrainDefOf.Gravel) && (map.Biome == AF_DefOf.RG_AF_AnimaForest))
             {
                 //Log.Message("Detectado e intentando cambiar");
-                __result = InternalDefOf.RG_AnimaSoilCracked;
+                __result = AF_DefOf.RG_AnimaSoilCracked;
             }
 
         }

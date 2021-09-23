@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThoughtDef>
+    <defName>RG_AF_PsychicFog</defName>
+    <workerClass>AnimaForest.ThoughtWorker_PsychicFog</workerClass>
+    <stages>
+      <li>
+        <label>psychic fog</label>
+        <description>PLACEHOLDER</description>
+        <baseMoodEffect>5</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+</Defs>
