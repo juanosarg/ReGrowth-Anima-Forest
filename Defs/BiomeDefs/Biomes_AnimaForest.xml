@@ -140,9 +140,11 @@
 			<RG-AF_Plant_AnimaRoot>1</RG-AF_Plant_AnimaRoot>
 			<RG-AF_Plant_AnimaBrambles>3</RG-AF_Plant_AnimaBrambles>
 			<RG-AF_Plant_AnimaBell>1</RG-AF_Plant_AnimaBell>
+			<RG-AF_Plant_TreeAnima>0.2</RG-AF_Plant_TreeAnima>
+			<RG-AF_Plant_TreeAnimaAncient>0.05</RG-AF_Plant_TreeAnimaAncient>
 		</wildPlants>
 		<wildAnimals>
-			<Hare>1</Hare>
+			<Thrumbo>0.5</Thrumbo>
 		</wildAnimals>
 		<allowedPackAnimals>
 			<li>Muffalo</li>
