@@ -164,14 +164,12 @@
 			<wildEqualLocalDistribution>false</wildEqualLocalDistribution>
 		</plant>
 	</ThingDef>
+
 	<!--============================ Wild - Trees ============================-->
 	<ThingDef ParentName="TreeBase">
 		<defName>RG-AF_Plant_TreeAnimaSapling</defName>
 		<label>anima sapling</label>
 		<description>.</description>
-		<descriptionHyperlinks>
-			<ThingDef>RG-AF_AnimaPearls</ThingDef>
-		</descriptionHyperlinks>
 		<graphicData>
 			<texPath>Things/Plant/AnimaSapling</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
@@ -197,6 +195,7 @@
 		</plant>
 		<ingestible/>
 	</ThingDef>
+
 	<ThingDef ParentName="TreeBase" Name="TreeAnima">
 		<defName>RG-AF_Plant_TreeAnima</defName>
 		<label>anima tree</label>
@@ -248,7 +247,22 @@
 				<sound>AnimaTreeScream</sound>
 			</li>
 		</comps>
+			<li Class="CompProperties_Psylinkable">
+				<requiredSubplantCountPerPsylinkLevel>
+					<li>20</li>
+					<li>20</li>
+					<li>20</li>
+					<li>20</li>
+					<li>20</li>
+					<li>20</li>
+				</requiredSubplantCountPerPsylinkLevel>
+				<requiredFocus>Natural</requiredFocus>
+				<linkSound>AnimaTreeLink</linkSound>
+				<enoughPlantsLetterLabel>About: Anima tree linking</enoughPlantsLetterLabel>
+				<enoughPlantsLetterText>The ancient anima tree now has {0} anima bushes around it. This is enough for a tribal person to begin their first linking ritual!\n\nThe linking ritual gives a level of psylink and the ability to use psychic powers. Upgrading to a higher level requires more bushes at each level.\n\nThe anima bush requirements for linking rituals to upgrade psycasters are:\n\n{1}\n\nNote: Only those with the nature focus type can meditate to or link with anima trees. You can see a person's focus types by looking at their info card with the ‘i' button.</enoughPlantsLetterText>
+			</li>
 	</ThingDef>
+
 	<ThingDef ParentName="TreeBase">
 		<defName>RG-AF_Plant_TreeAnimaAncient</defName>
 		<label>ancient anima tree</label>
@@ -299,57 +313,7 @@
 			</li>
 		</comps>
 	</ThingDef>
-	<ThingDef ParentName="TreeBase">
-		<defName>RG-AF_Plant_AnimaTreeJadeite</defName>
-		<label>jadeite tree</label>
-		<description>.</description>
-		<graphicData>
-			<texPath>Things/Plant/AnimaTreeJadeite</texPath>
-			<graphicClass>Graphic_Random</graphicClass>
-			<shadowData>
-				<volume>(0.12, 0.08, 0.1)</volume>
-				<offset>(0,0,-0.25)</offset>
-			</shadowData>
-		</graphicData>
-		<drawGUIOverlay>True</drawGUIOverlay>
-		<statBases>
-			<Beauty>7</Beauty>
-			<MeditationFocusStrength>0.28</MeditationFocusStrength>
-			<Flammability>0</Flammability>
-			<MaxHitPoints>600</MaxHitPoints>
-		</statBases>
-		<ingestible/>
-		<preventSkyfallersLandingOn>true</preventSkyfallersLandingOn>
-		<plant>
-			<growDays>50</growDays>
-			<visualSizeRange>2.8~3.5</visualSizeRange>
-			<sowMinSkill>0</sowMinSkill>
-			<sowTags Inherit="False"/>
-			<harvestYield>10</harvestYield>
-			<harvestTag>Standard</harvestTag>
-			<harvestedThingDef>Jade</harvestedThingDef>
-			<dieIfNoSunlight>False</dieIfNoSunlight>
-			<dieFromToxicFallout>False</dieFromToxicFallout>
-			<lifespanDaysPerGrowDays>0</lifespanDaysPerGrowDays>
-			<fertilityMin>0.02</fertilityMin>
-			<fertilitySensitivity>0</fertilitySensitivity>
-			<sowResearchPrerequisites Inherit="False"/>
-			<topWindExposure>0.05</topWindExposure>
-		</plant>
-		<comps>
-			<li Class="CompProperties_Glower">
-				<glowRadius>2.5</glowRadius>
-				<glowColor>(110,116,125,0)</glowColor>
-			</li>
-			<li Class="CompProperties_GiveThoughtToAllMapPawnsOnDestroy">
-				<thought>AnimaScream</thought>
-				<message>The anima tree has died and emitted a disturbing psychic scream.</message>
-			</li>
-			<li Class="CompProperties_PlaySoundOnDestroy">
-				<sound>AnimaTreeScream</sound>
-			</li>
-		</comps>
-	</ThingDef>
+
 	<ThingDef ParentName="TreeBase">
 		<defName>RG-AF_Plant_AnimaTreeElder</defName>
 		<label>ancient anima tree</label>
@@ -400,4 +364,5 @@
 			</li>
 		</comps>
 	</ThingDef>
+
 </Defs>
