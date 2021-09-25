@@ -22,7 +22,7 @@ namespace AnimaForest
             {
                 if (__result.actor.Map.Biome == AF_DefOf.RG_AF_AnimaForest && Rand.Chance(0.1f))
                 {
-                    Utils.DoAnimaWrath(__result.actor.Map);
+                    __result.actor.Map.GetAnimaForestTracker().RegisterHarm();
                 }
             });
         }
@@ -34,9 +34,10 @@ namespace AnimaForest
     {
         public static void Postfix(Pawn __instance, DamageInfo? dinfo, Hediff exactCulprit = null)
         {
-            if (__instance.IsAnimaAnimal() && dinfo.HasValue && (dinfo.Value.Instigator is Pawn pawn && pawn.IsColonist || dinfo.Value.Instigator?.Faction == Faction.OfPlayer) && Rand.Chance(0.1f))
+            if (__instance.Map?.Biome == AF_DefOf.RG_AF_AnimaForest && __instance.Faction is null && dinfo.HasValue 
+                && (dinfo.Value.Instigator is Pawn pawn && pawn.IsColonist || dinfo.Value.Instigator?.Faction == Faction.OfPlayer))
             {
-                Utils.DoAnimaWrath(dinfo.Value.Instigator.Map);
+                __instance.Map.GetAnimaForestTracker().RegisterHarm();
             }
         }
     }

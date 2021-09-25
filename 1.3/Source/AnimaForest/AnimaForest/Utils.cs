@@ -5,17 +5,18 @@ using System.Collections.Generic;
 
 namespace AnimaForest
 {
+	[StaticConstructorOnStartup]
 	public static class Utils
 	{
+		static Utils()
+        {
+			ThingSetMaker_ExposedOreDeposit.Reset();
+		}
 		public static bool IsAffectedByPsychicFog(this Pawn pawn)
         {
 			return pawn.RaceProps.IsFlesh && pawn.Map != null && (pawn.GetRoom()?.PsychologicallyOutdoors ?? false) && pawn.Map.weatherManager.CurWeatherPerceived == AF_DefOf.RG_AF_PsychicFog;
 		}
 
-		public static bool IsAnimaAnimal(this Pawn pawn)
-		{
-			return pawn.def == AF_DefOf.RG_AnimaBear || pawn.def == AF_DefOf.RG_AnimaDeer;
-		}
 		public static void DoAnimaWrath(Map map)
         {
 			switch (Rand.RangeInclusive(1, 4))
@@ -36,6 +37,16 @@ namespace AnimaForest
         {
 			var parms = StorytellerUtility.DefaultParmsNow(incidentDef.category, map);
 			incidentDef.Worker.TryExecute(parms);
+		}
+
+		private static Dictionary<Map, AnimaForestTracker> cachedComps = new Dictionary<Map, AnimaForestTracker>();
+		public static AnimaForestTracker GetAnimaForestTracker(this Map map)
+		{
+			if (!cachedComps.TryGetValue(map, out var tracker))
+			{
+				cachedComps[map] = tracker = map.GetComponent<AnimaForestTracker>();
+			}
+			return tracker;
 		}
 	}
 }

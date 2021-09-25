@@ -26,5 +26,6 @@ namespace AnimaForest
 		public static IncidentDef RG_AF_AnimalInsanityPulse;
 		public static ThingDef RG_AnimaBear;
 		public static ThingDef RG_AnimaDeer;
+		public static ThingSetMakerDef RG_AF_ExposedOreDeposite;
 	}
 }

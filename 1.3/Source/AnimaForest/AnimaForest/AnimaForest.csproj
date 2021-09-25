@@ -49,10 +49,14 @@
     <Compile Include="Harmony\AnimaWrath.cs" />
     <Compile Include="Harmony\World_NaturalRockTypesIn.cs" />
     <Compile Include="Hediffs\Hediff_PsychicFogEffect.cs" />
+    <Compile Include="Incidents\IncidentWorker_ExposedOreDeposit.cs" />
     <Compile Include="Incidents\IncidentWorker_AnimalInsanityPulse.cs" />
+    <Compile Include="Incidents\IncidentWorker_AnimaForestHarmony.cs" />
     <Compile Include="Incidents\IncidentWorker_PsychicShriek.cs" />
+    <Compile Include="Misc\ThingSetMaker_ExposedOreDeposit.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Thoughts\ThoughtWorker_PsychicFog.cs" />
+    <Compile Include="AnimaForestTracker.cs" />
     <Compile Include="Utils.cs" />
   </ItemGroup>
   <ItemGroup>
