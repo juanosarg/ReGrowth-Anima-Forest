@@ -12,5 +12,16 @@
       </li>
     </stages>
   </ThoughtDef>
-  
+
+  <ThoughtDef>
+    <defName>RG_AF_AnimaSoothe</defName>
+    <workerClass>AnimaForest.ThoughtWorker_AnimaSoothe</workerClass>
+    <stages>
+      <li>
+        <label>anima soothe</label>
+        <description>PLACEHOLDER</description>
+        <baseMoodEffect>20</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
 </Defs>

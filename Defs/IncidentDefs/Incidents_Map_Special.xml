@@ -37,7 +37,33 @@
     <workerClass>AnimaForest.IncidentWorker_ExposedOreDeposit</workerClass>
     <letterLabel>Exposed ore deposit</letterLabel>
     <letterText>In order to reward you for living in harmony with the forest, the mystic roots have pushed some valuable resources to the surface.</letterText>
-    <baseChance>0.5</baseChance>
+    <baseChance>1.0</baseChance>
+  </IncidentDef>
+
+  <IncidentDef>
+    <defName>RG_AF_AnimaSoothe</defName>
+    <label>anima soothe</label>
+    <category>Misc</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>AnimaForest.IncidentWorker_AnimaSoothe</workerClass>
+    <letterLabel>Anima soothe</letterLabel>
+    <letterText>In order to reward you for living in harmony with the forest, anima forest released a smooth psychic soothe, making your colonists euphoric.</letterText>
+    <baseChance>1.0</baseChance>
   </IncidentDef>
   
+
+  <IncidentDef>
+    <defName>RG_AF_HealrootSprout</defName>
+    <label>healroot sprout</label>
+    <category>Misc</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>AnimaForest.IncidentWorker_HealrootSprout</workerClass>
+    <letterLabel>{PLANT_label} sproot</letterLabel>
+    <letterText>In order to reward you for living in harmony with the forest, a {PLANT_label} has sprouted nearby. It can regularly be harvested to gain herbal medicine.</letterText>
+    <baseChance>1.0</baseChance>
+  </IncidentDef>
 </Defs>

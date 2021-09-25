@@ -10,7 +10,7 @@ namespace AnimaForest
     {
         private int lastHarmTick;
 
-        public const int MinHarmonyDuration = GenDate.TicksPerDay * 7;
+        public const int MinHarmonyDuration = GenDate.TicksPerDay * 1;
         public bool InHarmony => (Find.TickManager.TicksGame - lastHarmTick) >= MinHarmonyDuration;
         public AnimaForestTracker(Map map) : base(map)
         {

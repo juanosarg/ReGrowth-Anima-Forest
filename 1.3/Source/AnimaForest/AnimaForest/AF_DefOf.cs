@@ -27,5 +27,6 @@ namespace AnimaForest
 		public static ThingDef RG_AnimaBear;
 		public static ThingDef RG_AnimaDeer;
 		public static ThingSetMakerDef RG_AF_ExposedOreDeposite;
+		public static GameConditionDef RG_AF_AnimaSoothe;
 	}
 }

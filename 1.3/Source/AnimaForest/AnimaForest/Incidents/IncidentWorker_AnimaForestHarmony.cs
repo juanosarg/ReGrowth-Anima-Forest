@@ -10,7 +10,7 @@ namespace AnimaForest
         protected override bool CanFireNowSub(IncidentParms parms)
         {
             var map = parms.target as Map;
-            if (!map.GetAnimaForestTracker().InHarmony)
+            if (map.Biome != AF_DefOf.RG_AF_AnimaForest || !map.GetAnimaForestTracker().InHarmony)
             {
                 return false;
             }

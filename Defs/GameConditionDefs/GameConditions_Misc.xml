@@ -22,4 +22,18 @@
     <letterDef>NegativeEvent</letterDef>
     <canBePermanent>true</canBePermanent>
   </GameConditionDef>
+  
+  <GameConditionDef>
+    <defName>RG_AF_AnimaSoothe</defName>
+    <conditionClass>AnimaForest.GameCondition_AnimaSoothe</conditionClass>
+    <label>Anima soothe</label>
+    <description>A distant archotech is emitting psychic signals through an orbital amplifier, calming people and stabilizing their minds.</description>
+    <letterText>In order to reward you for living in harmony with the forest, anima forest released a smooth psychic soothe, making your colonists euphoric.</letterText>
+    <endMessage>The anima soothe is ending.</endMessage>
+    <letterDef>PositiveEvent</letterDef>
+    <exclusiveConditions>
+      <li>PsychicDrone</li>
+    </exclusiveConditions>
+    <canBePermanent>true</canBePermanent>
+  </GameConditionDef>
 </Defs>

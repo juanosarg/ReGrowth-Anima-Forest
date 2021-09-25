@@ -17,6 +17,11 @@ namespace AnimaForest
 			return pawn.RaceProps.IsFlesh && pawn.Map != null && (pawn.GetRoom()?.PsychologicallyOutdoors ?? false) && pawn.Map.weatherManager.CurWeatherPerceived == AF_DefOf.RG_AF_PsychicFog;
 		}
 
+		public static bool IsAffectedByAnimaSoothe(this Pawn pawn)
+		{
+			return pawn.RaceProps.IsFlesh && pawn.Map != null && pawn.Map.gameConditionManager.ConditionIsActive(AF_DefOf.RG_AF_AnimaSoothe);
+		}
+
 		public static void DoAnimaWrath(Map map)
         {
 			switch (Rand.RangeInclusive(1, 4))
@@ -27,7 +32,7 @@ namespace AnimaForest
 				case 4: AddIncident(map, AF_DefOf.RG_AF_AnimalInsanityPulse); break;
 			}
 		}
-		private static void AddGameCondition(Map map, GameConditionDef gameConditionDef, int duration)
+		public static void AddGameCondition(this Map map, GameConditionDef gameConditionDef, int duration)
         {
 			var gameCondition = GameConditionMaker.MakeCondition(gameConditionDef, duration);
 			map.gameConditionManager.RegisterCondition(gameCondition);

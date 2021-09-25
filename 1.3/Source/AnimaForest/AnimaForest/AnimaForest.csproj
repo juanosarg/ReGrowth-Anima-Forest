@@ -43,18 +43,22 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AF_DefOf.cs" />
+    <Compile Include="GameConditions\GameCondition_AnimaSoothe.cs" />
     <Compile Include="GameConditions\GameCondition_PsychicStorm.cs" />
     <Compile Include="Harmony\GenStep_Terrain_TerrainFrom.cs" />
     <Compile Include="Harmony\HarmonyInstance.cs" />
     <Compile Include="Harmony\AnimaWrath.cs" />
     <Compile Include="Harmony\World_NaturalRockTypesIn.cs" />
     <Compile Include="Hediffs\Hediff_PsychicFogEffect.cs" />
+    <Compile Include="Incidents\IncidentWorker_HealrootSprout.cs" />
+    <Compile Include="Incidents\IncidentWorker_AnimaSoothe.cs" />
     <Compile Include="Incidents\IncidentWorker_ExposedOreDeposit.cs" />
     <Compile Include="Incidents\IncidentWorker_AnimalInsanityPulse.cs" />
     <Compile Include="Incidents\IncidentWorker_AnimaForestHarmony.cs" />
     <Compile Include="Incidents\IncidentWorker_PsychicShriek.cs" />
     <Compile Include="Misc\ThingSetMaker_ExposedOreDeposit.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Thoughts\ThoughtWorker_AnimaSoothe.cs" />
     <Compile Include="Thoughts\ThoughtWorker_PsychicFog.cs" />
     <Compile Include="AnimaForestTracker.cs" />
     <Compile Include="Utils.cs" />
