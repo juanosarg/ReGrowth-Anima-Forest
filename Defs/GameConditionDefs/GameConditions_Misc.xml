@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <GameConditionDef>
+    <defName>RG_AF_PsychicStormGC</defName>
+    <conditionClass>AnimaForest.GameCondition_PsychicStorm</conditionClass>
+    <label>psychic storm</label>
+    <description>Threatened anima forest released a psychic scream strong enough to enchant the very particles of water in the atmosphere.  A short but incredibly powerful supernatural rain has begun, altering the very composition of time. Any person or creature not under roof will age years within mere hours. It is expected to last several hours.</description>
+    <endMessage>The worst of the psychic storm has settled.</endMessage>
+    <letterText>Threatened anima forest released a psychic scream strong enough to enchant the very particles of water in the atmosphere.  A short but incredibly powerful supernatural rain has begun, altering the very composition of time. Any person or creature not under roof will age years within mere hours. It is expected to last several hours.</letterText>
+    <letterDef>NegativeEvent</letterDef>
+    <canBePermanent>true</canBePermanent>
+  </GameConditionDef>
+
+  <GameConditionDef>
+    <defName>RG_AF_PsychicFlareGC</defName>
+    <conditionClass>GameCondition_DisableElectricity</conditionClass>
+    <label>Psychic flare</label>
+    <description>Sensing your actions and ill-intentions, anima forest changed the composition of matter around the forest, disabling all electronic devices for the foreseeable future.</description>
+    <endMessage>Psychic flare has disappeared.</endMessage>
+    <letterText>Sensing your actions and ill-intentions, anima forest changed the composition of matter around the forest, disabling all electronic devices for the foreseeable future.</letterText>
+    <letterDef>NegativeEvent</letterDef>
+    <canBePermanent>true</canBePermanent>
+  </GameConditionDef>
+</Defs>

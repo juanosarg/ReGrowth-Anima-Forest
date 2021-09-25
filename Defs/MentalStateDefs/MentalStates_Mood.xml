@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <MentalStateDef ParentName="WanderPsychotic">
+    <defName>RG_AF_Wander_Psychotic_Short</defName>
+    <minTicksBeforeRecovery>5000</minTicksBeforeRecovery>
+	<maxTicksBeforeRecovery>7500</maxTicksBeforeRecovery>
+  </MentalStateDef>
+
+</Defs>

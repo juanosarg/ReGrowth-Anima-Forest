@@ -5,12 +5,37 @@ using System.Collections.Generic;
 
 namespace AnimaForest
 {
-
 	public static class Utils
 	{
 		public static bool IsAffectedByPsychicFog(this Pawn pawn)
         {
 			return pawn.RaceProps.IsFlesh && pawn.Map != null && (pawn.GetRoom()?.PsychologicallyOutdoors ?? false) && pawn.Map.weatherManager.CurWeatherPerceived == AF_DefOf.RG_AF_PsychicFog;
+		}
+
+		public static bool IsAnimaAnimal(this Pawn pawn)
+		{
+			return pawn.def == AF_DefOf.RG_AnimaBear || pawn.def == AF_DefOf.RG_AnimaDeer;
+		}
+		public static void DoAnimaWrath(Map map)
+        {
+			switch (Rand.RangeInclusive(1, 4))
+			{
+				case 1: AddGameCondition(map, AF_DefOf.RG_AF_PsychicStormGC, Rand.Range(GenDate.TicksPerHour * 2, GenDate.TicksPerHour * 3)); break;
+				case 2: AddGameCondition(map, AF_DefOf.RG_AF_PsychicFlareGC, Rand.Range(GenDate.TicksPerDay, GenDate.TicksPerDay * 3)); break;
+				case 3: AddIncident(map, AF_DefOf.RG_AF_PsychicShriek); break;
+				case 4: AddIncident(map, AF_DefOf.RG_AF_AnimalInsanityPulse); break;
+			}
+		}
+		private static void AddGameCondition(Map map, GameConditionDef gameConditionDef, int duration)
+        {
+			var gameCondition = GameConditionMaker.MakeCondition(gameConditionDef, duration);
+			map.gameConditionManager.RegisterCondition(gameCondition);
+        }
+
+		private static void AddIncident(Map map, IncidentDef incidentDef)
+        {
+			var parms = StorytellerUtility.DefaultParmsNow(incidentDef.category, map);
+			incidentDef.Worker.TryExecute(parms);
 		}
 	}
 }

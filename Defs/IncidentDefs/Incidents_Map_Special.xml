@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <IncidentDef>
+    <defName>RG_AF_PsychicShriek</defName>
+    <label>psychic shriek</label>
+    <category>Special</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>AnimaForest.IncidentWorker_PsychicShriek</workerClass>
+    <letterLabel>Psychic shriek</letterLabel>
+    <letterText>Threatened anima forest released a terrifying shriek in the local area, disorienting all creatures. Colonists will become dazed for several hours.</letterText>
+    <baseChance>0</baseChance>
+  </IncidentDef>
+
+  <IncidentDef>
+    <defName>RG_AF_AnimalInsanityPulse</defName>
+    <label>animal insanity pulse</label>
+    <category>Special</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>AnimaForest.IncidentWorker_AnimalInsanityPulse</workerClass>
+    <letterLabel>Animal insanity pulse</letterLabel>
+    <letterText>The Anima forest feeling threatened has emitted a psychic pulse that has driven all nearby animals mad.</letterText>
+    <baseChance>0</baseChance>
+  </IncidentDef>
+</Defs>
