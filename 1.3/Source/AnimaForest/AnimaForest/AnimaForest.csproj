@@ -50,6 +50,7 @@
     <Compile Include="Harmony\HarmonyInstance.cs" />
     <Compile Include="Harmony\AnimaWrath.cs" />
     <Compile Include="Harmony\World_NaturalRockTypesIn.cs" />
+    <Compile Include="Hediffs\Hediff_PsychicInsanity.cs" />
     <Compile Include="Hediffs\Hediff_PsychicFogEffect.cs" />
     <Compile Include="Incidents\IncidentWorker_BarkGift.cs" />
     <Compile Include="Incidents\IncidentWorker_HealrootSprout.cs" />

@@ -28,5 +28,8 @@ namespace AnimaForest
 		public static ThingDef RG_AnimaDeer;
 		public static ThingSetMakerDef RG_AF_ExposedOreDeposite;
 		public static GameConditionDef RG_AF_AnimaSoothe;
+		public static HediffDef RG_AF_PsychicBrainworm;
+		public static HediffDef RG_AF_PsychicBrainwormParalysis;
+		public static MentalStateDef WanderConfused;
 	}
 }

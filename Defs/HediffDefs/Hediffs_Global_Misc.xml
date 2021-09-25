@@ -17,5 +17,94 @@
 			</li>
 		</stages>
 	</HediffDef>
+
+	<HediffDef>
+		<defName>RG_AF_PsychicBrainworm</defName>
+		<label>Psychic brainworm</label>
+		<description>An elusive parasite inside the brain. It’s connected directly to the frontal lobes, and is known to dissolve them if a victim tries to cast a psycast, removing the person’s ability to think.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<makesSickThought>true</makesSickThought>
+		<tendable>true</tendable>
+		<comps>
+			<li Class="HediffCompProperties_TendDuration">
+				<baseTendDurationHours>48</baseTendDurationHours>
+				<disappearsAtTotalTendQuality>3</disappearsAtTotalTendQuality>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>RG_AF_PsychicBrainwormParalysis</defName>
+		<label>Psychic paralysis</label>
+		<description>PLACEHOLDER</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<setMax>0.01</setMax>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>RG_AF_AnimaSpores</defName>
+		<label>Anima spores</label>
+		<description>Microscopic anima spores that made their way into the nervous system. Whilst providing a major mood increase, the neural payload greatly lowers consciousness.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<setMax>0.85</setMax>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<ThoughtDef>
+		<defName>RG_AF_AnimaSpores</defName>
+		<workerClass>ThoughtWorker_Hediff</workerClass>
+		<hediff>RG_AF_AnimaSpores</hediff>
+		<validWhileDespawned>true</validWhileDespawned>
+		<stages>
+			<li>
+				<label>anima spores</label>
+				<description>PLACEHOLDER</description>
+				<baseMoodEffect>20</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
 	
+	<HediffDef>
+		<defName>RG_AF_PsychicInsanity</defName>
+		<label>Psychic insanity</label>
+		<description>When the brain tunes in to a certain wavelength, psychic insanity can occur at random. Victims of this disease are known to just casually wander around, without a clear purpose.</description>
+		<hediffClass>AnimaForest.Hediff_PsychicInsanity</hediffClass>
+	</HediffDef>
+	
+	<HediffDef>
+		<defName>RG_AF_NeuralMigraine</defName>
+		<label>Neural migraine</label>
+		<description>Similar to psychic hangover, a neural migraine can randomly occur with all psycasters. It’s bothersome and can lead to a large amount of mental breaks if the person snaps.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<setMax>0.80</setMax>
+					</li>
+				</capMods>
+				<statOffsets>
+					<MentalBreakThreshold>0.2</MentalBreakThreshold>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
 </Defs>

@@ -66,4 +66,26 @@ namespace AnimaForest
             return true;
         }
     }
+
+    [HarmonyPatch]
+    public static class CastAbility_Patch
+    {
+        public static IEnumerable<MethodBase> TargetMethods()
+        {
+            foreach (var method in AccessTools.GetDeclaredMethods(typeof(Ability)).Where(x => x.Name == "Activate"))
+            {
+                yield return method;
+            }
+        }
+        public static void Postfix(Ability __instance)
+        {
+            var hediff = __instance.pawn.health.hediffSet.GetFirstHediffOfDef(AF_DefOf.RG_AF_PsychicBrainworm);
+            if (hediff != null)
+            {
+                __instance.pawn.health.RemoveHediff(hediff);
+                hediff = HediffMaker.MakeHediff(AF_DefOf.RG_AF_PsychicBrainwormParalysis, __instance.pawn);
+                __instance.pawn.health.AddHediff(hediff);
+            }
+        }
+    }
 }

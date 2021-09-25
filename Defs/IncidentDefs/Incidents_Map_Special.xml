@@ -78,4 +78,32 @@
     <letterText>In order to reward you for living in harmony with the forest, a large amount of anima trees have shed their bark for you.</letterText>
     <baseChance>1.0</baseChance>
   </IncidentDef>
+  
+  <IncidentDef ParentName="DiseaseIncident">
+    <defName>RG_AF_Disease_PsychicBrainworm</defName>
+    <label>Psychic brainworm</label>
+    <diseaseIncident>RG_AF_PsychicBrainworm</diseaseIncident>
+    <letterLabel>Disease: Psychic brainworm</letterLabel>
+  </IncidentDef>
+
+  <IncidentDef ParentName="DiseaseIncident">
+    <defName>RG_AF_Disease_AnimaSpores</defName>
+    <label>Anima spores</label>
+    <diseaseIncident>RG_AF_AnimaSpores</diseaseIncident>
+    <letterLabel>Disease: Anima spores</letterLabel>
+  </IncidentDef>
+
+  <IncidentDef ParentName="DiseaseIncident">
+    <defName>RG_AF_Disease_PsychicInsanity</defName>
+    <label>Psychic insanity</label>
+    <diseaseIncident>RG_AF_PsychicInsanity</diseaseIncident>
+    <letterLabel>Disease: Psychic insanity</letterLabel>
+  </IncidentDef>
+
+  <IncidentDef ParentName="DiseaseIncident">
+    <defName>RG_AF_Disease_NeuralMigraine</defName>
+    <label>Neural migraine</label>
+    <diseaseIncident>RG_AF_NeuralMigraine</diseaseIncident>
+    <letterLabel>Disease: Neural migraine</letterLabel>
+  </IncidentDef>
 </Defs>

@@ -23,6 +23,22 @@
 		<diseaseMtbDays>35</diseaseMtbDays>
 		<diseases>
 			<li>
+				<diseaseInc>RG_AF_PsychicBrainworm</diseaseInc>
+				<commonality>100</commonality>
+			</li>
+			<li>
+				<diseaseInc>RG_AF_Disease_AnimaSpores</diseaseInc>
+				<commonality>100</commonality>
+			</li>
+			<li>
+				<diseaseInc>RG_AF_Disease_PsychicInsanity</diseaseInc>
+				<commonality>100</commonality>
+			</li>
+			<li>
+				<diseaseInc>RG_AF_Disease_NeuralMigraine</diseaseInc>
+				<commonality>100</commonality>
+			</li>
+			<li>
 				<diseaseInc>Disease_Flu</diseaseInc>
 				<commonality>100</commonality>
 			</li>
