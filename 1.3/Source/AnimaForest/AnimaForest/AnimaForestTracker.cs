@@ -10,7 +10,7 @@ namespace AnimaForest
     {
         private int lastHarmTick;
 
-        public const int MinHarmonyDuration = GenDate.TicksPerDay * 1;
+        public const int MinHarmonyDuration = GenDate.TicksPerDay * 7;
         public bool InHarmony => (Find.TickManager.TicksGame - lastHarmTick) >= MinHarmonyDuration;
         public AnimaForestTracker(Map map) : base(map)
         {
@@ -26,7 +26,7 @@ namespace AnimaForest
         }
 
         public int oreDepositIncidentEndTick;
-        public IntVec3 exposedOreDepositPlace;
+        public IntVec3 exposedOreDepositPlace = IntVec3.Invalid;
         public IntVec3 StartExposedOreDepositIncident()
         {
             if (!exposedOreDepositPlace.IsValid && TryFindCell(out exposedOreDepositPlace))
@@ -92,7 +92,7 @@ namespace AnimaForest
             base.ExposeData();
             Scribe_Values.Look(ref lastHarmTick, "lastHarmTick");
             Scribe_Values.Look(ref oreDepositIncidentEndTick, "oreDepositIncidentEndTick");
-            Scribe_Values.Look(ref exposedOreDepositPlace, "exposedOreDepositPlace");
+            Scribe_Values.Look(ref exposedOreDepositPlace, "exposedOreDepositPlace", IntVec3.Invalid);
         }
     }
 }

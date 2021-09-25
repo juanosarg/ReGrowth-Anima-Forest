@@ -53,7 +53,6 @@
     <baseChance>1.0</baseChance>
   </IncidentDef>
   
-
   <IncidentDef>
     <defName>RG_AF_HealrootSprout</defName>
     <label>healroot sprout</label>
@@ -64,6 +63,19 @@
     <workerClass>AnimaForest.IncidentWorker_HealrootSprout</workerClass>
     <letterLabel>{PLANT_label} sproot</letterLabel>
     <letterText>In order to reward you for living in harmony with the forest, a {PLANT_label} has sprouted nearby. It can regularly be harvested to gain herbal medicine.</letterText>
+    <baseChance>1.0</baseChance>
+  </IncidentDef>
+  
+  <IncidentDef>
+    <defName>RG_AF_BarkGift</defName>
+    <label>bark gift</label>
+    <category>Misc</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>AnimaForest.IncidentWorker_BarkGift</workerClass>
+    <letterLabel>Bark gift</letterLabel>
+    <letterText>In order to reward you for living in harmony with the forest, a large amount of anima trees have shed their bark for you.</letterText>
     <baseChance>1.0</baseChance>
   </IncidentDef>
 </Defs>

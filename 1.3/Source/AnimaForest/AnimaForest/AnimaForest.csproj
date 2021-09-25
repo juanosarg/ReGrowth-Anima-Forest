@@ -45,11 +45,13 @@
     <Compile Include="AF_DefOf.cs" />
     <Compile Include="GameConditions\GameCondition_AnimaSoothe.cs" />
     <Compile Include="GameConditions\GameCondition_PsychicStorm.cs" />
+    <Compile Include="Harmony\UniqueFeatures.cs" />
     <Compile Include="Harmony\GenStep_Terrain_TerrainFrom.cs" />
     <Compile Include="Harmony\HarmonyInstance.cs" />
     <Compile Include="Harmony\AnimaWrath.cs" />
     <Compile Include="Harmony\World_NaturalRockTypesIn.cs" />
     <Compile Include="Hediffs\Hediff_PsychicFogEffect.cs" />
+    <Compile Include="Incidents\IncidentWorker_BarkGift.cs" />
     <Compile Include="Incidents\IncidentWorker_HealrootSprout.cs" />
     <Compile Include="Incidents\IncidentWorker_AnimaSoothe.cs" />
     <Compile Include="Incidents\IncidentWorker_ExposedOreDeposit.cs" />
