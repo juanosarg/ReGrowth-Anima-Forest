@@ -23,7 +23,7 @@
 		<diseaseMtbDays>35</diseaseMtbDays>
 		<diseases>
 			<li>
-				<diseaseInc>RG_AF_PsychicBrainworm</diseaseInc>
+				<diseaseInc>RG_AF_Disease_PsychicBrainworm</diseaseInc>
 				<commonality>100</commonality>
 			</li>
 			<li>
